@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TCG Draft Layout Demo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="dist/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <main class="site grid">
+
+        <h1 class="site--title grid--contained">Draft-o-tron 5000</h1>
+
+        <section class="pack grid--contained">
+            <div class="pack--meta meta--bar">
+                <p class="meta--title">Pack 1 | Pick 1</p>
+                <p class="meta--info">
+                    <span class="info--players">3 Players</span>
+                    <span class="info--description">Modern Masters 2017</span>
+                </p>
+            </div>
+            <div class="pack--list">
+
+            </div>
+        </section>
+
+        <section class="picks grid--contained">
+            <div class="picks--meta meta--bar">
+                <p class="meta--title">Your Picks</p>
+                <ul class="meta--sort">
+                    <li><a href="#" class="sort--anchor sort--anchor__small active">A</a></li>
+                    <li><a href="#" class="sort--anchor sort--anchor__small">Z</a></li>
+                    <li><a href="#" class="sort--anchor">Group</a></li>
+                    <li><a href="#" class="sort--anchor">Type</a></li>
+                    <li><a href="#" class="sort--anchor">Cost</a></li>
+                    <li><a href="#" class="sort--anchor">Pick</a></li>
+                </ul>
+            </div>
+            <div class="pick--list">
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="dist/main.js" type="text/javascript"></script>
+</body>
+</html>
