@@ -1,0 +1,1697 @@
+var pack = [{
+    "name": "Anafenza, the Foremost",
+    "manaCost": "{W}{B}{G}",
+    "cmc": 3,
+    "colors": ["White", "Black", "Green"],
+    "type": "Legendary Creature — Human Soldier",
+    "supertypes": ["Legendary"],
+    "types": ["Creature"],
+    "subtypes": ["Human", "Soldier"],
+    "rarity": "Mythic Rare",
+    "set": "KTK",
+    "text": "Whenever Anafenza, the Foremost attacks, put a +1/+1 counter on another target tapped creature you control.\nIf a nontoken creature an opponent owns would die or a creature card not on the battlefield would be put into an opponent's graveyard, exile that card instead.",
+    "flavor": "Rarely at rest on the Amber Throne, Anafenza always leads the Abzan Houses to battle.",
+    "artist": "James Ryman",
+    "number": "163",
+    "power": "4",
+    "toughness": "4",
+    "layout": "normal",
+    "multiverseid": 386476,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386476&type=card",
+    "watermark": "Abzan",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Anafenza's first ability can target any tapped creature you control. That creature doesn't necessarily have to be attacking."
+    }, {
+        "date": "2014-09-20",
+        "text": "While Anafenza is on the battlefield, abilities that trigger whenever a nontoken creature your opponent owns dies won't trigger, as that card will never reach that player's graveyard. (Token creatures will still go to the graveyard briefly before ceasing to exist.)"
+    }, {
+        "date": "2014-09-20",
+        "text": "If your opponent discards a creature card while Anafenza is on the battlefield, abilities that function when a card is discarded (such as madness) still work, even though that card never reaches a graveyard. In addition, spells or abilities that check the characteristics of a discarded card (such as Chandra Ablaze's first ability) can find that card in exile."
+    }, {
+        "date": "2014-09-20",
+        "text": "Anafenza's last ability cares only what the card would be in the zone it's moving from, not what it would be in the graveyard. For example, if a land card you control becomes a creature due to an effect and then dies, the land card will be exiled. But if a creature card with bestow is an Aura when it would be put into the graveyard, it ends up in the graveyard."
+    }],
+    "foreignNames": [{
+        "name": "首领阿娜芬札",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386745&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386745
+    }, {
+        "name": "首領阿娜芬札",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387014&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387014
+    }, {
+        "name": "Anafenza, la Primordiale",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387552&type=card",
+        "language": "French",
+        "multiverseid": 387552
+    }, {
+        "name": "Anafenza die Vorderste",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387283&type=card",
+        "language": "German",
+        "multiverseid": 387283
+    }, {
+        "name": "Anafenza, la Preminente",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387821&type=card",
+        "language": "Italian",
+        "multiverseid": 387821
+    }, {
+        "name": "先頭に立つもの、アナフェンザ",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388090&type=card",
+        "language": "Japanese",
+        "multiverseid": 388090
+    }, {
+        "name": "일인자 아나펜자",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388359&type=card",
+        "language": "Korean",
+        "multiverseid": 388359
+    }, {
+        "name": "Anafenza, a Principal",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388628&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388628
+    }, {
+        "name": "Анафенза, Первейшая",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388897&type=card",
+        "language": "Russian",
+        "multiverseid": 388897
+    }, {
+        "name": "Anafenza, la líder",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389166&type=card",
+        "language": "Spanish",
+        "multiverseid": 389166
+    }],
+    "printings": ["pPRE", "KTK"],
+    "originalText": "Whenever Anafenza, the Foremost attacks, put a +1/+1 counter on another target tapped creature you control.\nIf a creature card would be put into an opponent's graveyard from anywhere, exile it instead.",
+    "originalType": "Legendary Creature — Human Soldier",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "84575c908afe702205978e9aa7af3ba52283ca99"
+}, {
+    "name": "Master the Way",
+    "manaCost": "{3}{U}{R}",
+    "cmc": 5,
+    "colors": ["Blue", "Red"],
+    "type": "Sorcery",
+    "types": ["Sorcery"],
+    "rarity": "Uncommon",
+    "set": "KTK",
+    "text": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
+    "flavor": "\"The Way has no beginning and no end. It is simply the path.\"\n—Narset, khan of the Jeskai",
+    "artist": "Howard Lyon",
+    "number": "188",
+    "layout": "normal",
+    "multiverseid": 386601,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386601&type=card",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Use the number of cards in your hand after you draw the card to determine how much damage Master the Way deals to the target creature or player. (Remember that Master the Way is not in your hand; it's on the stack.)"
+    }, {
+        "date": "2014-09-20",
+        "text": "If the creature or player is an illegal target as Master the Way tries to resolve, Master the Way will be countered and none of its effects will happen. You won't draw a card."
+    }],
+    "foreignNames": [{
+        "name": "通悟灵宗",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386870&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386870
+    }, {
+        "name": "通悟靈宗",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387139&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387139
+    }, {
+        "name": "Maîtriser la Voie",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387677&type=card",
+        "language": "French",
+        "multiverseid": 387677
+    }, {
+        "name": "Den Weg meistern",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387408&type=card",
+        "language": "German",
+        "multiverseid": 387408
+    }, {
+        "name": "Padroneggiare la Via",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387946&type=card",
+        "language": "Italian",
+        "multiverseid": 387946
+    }, {
+        "name": "道極め",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388215&type=card",
+        "language": "Japanese",
+        "multiverseid": 388215
+    }, {
+        "name": "도의 깨우침",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388484&type=card",
+        "language": "Korean",
+        "multiverseid": 388484
+    }, {
+        "name": "Dominar o Caminho",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388753&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388753
+    }, {
+        "name": "Путь Мастера",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389022&type=card",
+        "language": "Russian",
+        "multiverseid": 389022
+    }, {
+        "name": "Dominar la sabiduría",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389291&type=card",
+        "language": "Spanish",
+        "multiverseid": 389291
+    }],
+    "printings": ["KTK"],
+    "originalText": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
+    "originalType": "Sorcery",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "9b65561b8f4ed6ae89715e8858dbff2f12f41a0a"
+}, {
+    "name": "Suspension Field",
+    "manaCost": "{1}{W}",
+    "cmc": 2,
+    "colors": ["White"],
+    "type": "Enchantment",
+    "types": ["Enchantment"],
+    "rarity": "Uncommon",
+    "set": "KTK",
+    "text": "When Suspension Field enters the battlefield, you may exile target creature with toughness 3 or greater until Suspension Field leaves the battlefield. (That creature returns under its owner's control.)",
+    "artist": "Seb McKinnon",
+    "number": "25",
+    "layout": "normal",
+    "multiverseid": 386682,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386682&type=card",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Suspension Field's ability causes a zone change with a duration. It's a single ability that creates two one-shot effects: one that exiles the creature when the ability resolves, and another that returns the exiled card to the battlefield immediately after Suspension Field leaves the battlefield."
+    }, {
+        "date": "2014-09-20",
+        "text": "If the target creature becomes an illegal target before the ability resolves, perhaps because its toughness was lowered, the ability will be countered and none of its effects will happen. No creature will be exiled, and Suspension Field will remain on the battlefield."
+    }, {
+        "date": "2014-09-20",
+        "text": "If Suspension Field leaves the battlefield before its enters-the-battlefield ability resolves, the target creature won't be exiled."
+    }, {
+        "date": "2014-09-20",
+        "text": "Auras attached to the exiled creature will be put into their owners' graveyards. Equipment attached to the exiled creature will become unattached and remain on the battlefield. Any counters on the exiled creature will cease to exist."
+    }, {
+        "date": "2014-09-20",
+        "text": "If a token is exiled this way, it ceases to exist. It won't be returned to the battlefield."
+    }, {
+        "date": "2014-09-20",
+        "text": "The exiled card returns to the battlefield immediately after Suspension Field leaves the battlefield. Nothing happens between these two events, including state-based actions. Suspension Field and the returned card aren't on the battlefield at the same time."
+    }, {
+        "date": "2014-09-20",
+        "text": "In a multiplayer game, if Suspension Field's owner leaves the game, the exiled card will return to the battlefield. Because the one-shot effect that returns the card isn't an ability that goes on the stack, it won't cease to exist along with the leaving player's spells and abilities on the stack."
+    }],
+    "foreignNames": [{
+        "name": "延阻力场",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386951&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386951
+    }, {
+        "name": "延阻力場",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387220&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387220
+    }, {
+        "name": "Champ de suspension",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387758&type=card",
+        "language": "French",
+        "multiverseid": 387758
+    }, {
+        "name": "Spannungsfeld",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387489&type=card",
+        "language": "German",
+        "multiverseid": 387489
+    }, {
+        "name": "Campo di Sospensione",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388027&type=card",
+        "language": "Italian",
+        "multiverseid": 388027
+    }, {
+        "name": "停止の場",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388296&type=card",
+        "language": "Japanese",
+        "multiverseid": 388296
+    }, {
+        "name": "구속장",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388565&type=card",
+        "language": "Korean",
+        "multiverseid": 388565
+    }, {
+        "name": "Campo de Suspensão",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388834&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388834
+    }, {
+        "name": "Поле Обездвиживания",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389103&type=card",
+        "language": "Russian",
+        "multiverseid": 389103
+    }, {
+        "name": "Campo de suspensión",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389372&type=card",
+        "language": "Spanish",
+        "multiverseid": 389372
+    }],
+    "printings": ["pFNM", "KTK"],
+    "originalText": "When Suspension Field enters the battlefield, you may exile target creature with toughness 3 or greater until Suspension Field leaves the battlefield. (That creature returns under its owner's control.)",
+    "originalType": "Enchantment",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "6df051effacfd25df28f4773aa252b13005effaa"
+}, {
+    "name": "Despise",
+    "manaCost": "{B}",
+    "cmc": 1,
+    "colors": ["Black"],
+    "type": "Sorcery",
+    "types": ["Sorcery"],
+    "rarity": "Uncommon",
+    "set": "KTK",
+    "text": "Target opponent reveals his or her hand. You choose a creature or planeswalker card from it. That player discards that card.",
+    "flavor": "\"You have returned from fire, traitor. This time I will see you leave as ashes.\"\n—Zurgo, to Sarkhan Vol",
+    "artist": "Todd Lockwood",
+    "number": "69",
+    "layout": "normal",
+    "multiverseid": 386517,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386517&type=card",
+    "foreignNames": [{
+        "name": "鄙视",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386786&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386786
+    }, {
+        "name": "鄙視",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387055&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387055
+    }, {
+        "name": "Dédain",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387593&type=card",
+        "language": "French",
+        "multiverseid": 387593
+    }, {
+        "name": "Verachten",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387324&type=card",
+        "language": "German",
+        "multiverseid": 387324
+    }, {
+        "name": "Disdegnare",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387862&type=card",
+        "language": "Italian",
+        "multiverseid": 387862
+    }, {
+        "name": "蔑み",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388131&type=card",
+        "language": "Japanese",
+        "multiverseid": 388131
+    }, {
+        "name": "경멸",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388400&type=card",
+        "language": "Korean",
+        "multiverseid": 388400
+    }, {
+        "name": "Desprezar",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388669&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388669
+    }, {
+        "name": "Презирать",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388938&type=card",
+        "language": "Russian",
+        "multiverseid": 388938
+    }, {
+        "name": "Despreciar",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389207&type=card",
+        "language": "Spanish",
+        "multiverseid": 389207
+    }],
+    "printings": ["pFNM", "NPH", "KTK"],
+    "originalText": "Target opponent reveals his or her hand. You choose a creature or planeswalker card from it. That player discards that card.",
+    "originalType": "Sorcery",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Scars of Mirrodin Block",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "96c0593263db923d92187fbb814f47bed626673b"
+}, {
+    "name": "Bring Low",
+    "manaCost": "{3}{R}",
+    "cmc": 4,
+    "colors": ["Red"],
+    "type": "Instant",
+    "types": ["Instant"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Bring Low deals 3 damage to target creature. If that creature has a +1/+1 counter on it, Bring Low deals 5 damage to it instead.",
+    "flavor": "\"People are often humbled by the elements. But the elements, too, can be humbled.\"\n—Surrak, khan of the Temur",
+    "artist": "Slawomir Maniak",
+    "number": "103",
+    "layout": "normal",
+    "multiverseid": 386499,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386499&type=card",
+    "foreignNames": [{
+        "name": "放倒",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386768&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386768
+    }, {
+        "name": "放倒",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387037&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387037
+    }, {
+        "name": "Mettre à bas",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387575&type=card",
+        "language": "French",
+        "multiverseid": 387575
+    }, {
+        "name": "Zu Fall bringen",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387306&type=card",
+        "language": "German",
+        "multiverseid": 387306
+    }, {
+        "name": "Abbattere",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387844&type=card",
+        "language": "Italian",
+        "multiverseid": 387844
+    }, {
+        "name": "打ち倒し",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388113&type=card",
+        "language": "Japanese",
+        "multiverseid": 388113
+    }, {
+        "name": "떨구기",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388382&type=card",
+        "language": "Korean",
+        "multiverseid": 388382
+    }, {
+        "name": "Levar ao Chão",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388651&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388651
+    }, {
+        "name": "Сбить с Ног",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388920&type=card",
+        "language": "Russian",
+        "multiverseid": 388920
+    }, {
+        "name": "Degradar",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389189&type=card",
+        "language": "Spanish",
+        "multiverseid": 389189
+    }],
+    "printings": ["KTK"],
+    "originalText": "Bring Low deals 3 damage to target creature. If that creature has a +1/+1 counter on it, Bring Low deals 5 damage to it instead.",
+    "originalType": "Instant",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "f4e6461441691331abc0aa5e7a5196671f54871e"
+}, {
+    "name": "Shambling Attendants",
+    "manaCost": "{7}{B}",
+    "cmc": 8,
+    "colors": ["Black"],
+    "type": "Creature — Zombie",
+    "types": ["Creature"],
+    "subtypes": ["Zombie"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Delve (Each card you exile from your graveyard while casting this spell pays for {1}.)\nDeathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+    "flavor": "\"Let the world behold what becomes of those who defy us.\"\n—Taigam, Sidisi's Hand",
+    "artist": "Daarken",
+    "number": "89",
+    "power": "3",
+    "toughness": "5",
+    "layout": "normal",
+    "multiverseid": 386662,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386662&type=card",
+    "watermark": "Sultai",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "The rules for delve have changed slightly since it was last in an expansion. Previously, delve reduced the cost to cast a spell. Under the current rules, you exile cards from your graveyard at the same time you pay the spell's cost. Exiling a card this way is simply another way to pay that cost."
+    }, {
+        "date": "2014-09-20",
+        "text": "Delve doesn't change a spell's mana cost or converted mana cost. For example, Dead Drop's converted mana cost is 10 even if you exiled three cards to cast it."
+    }, {
+        "date": "2014-09-20",
+        "text": "You can't exile cards to pay for the colored mana requirements of a spell with delve."
+    }, {
+        "date": "2014-09-20",
+        "text": "You can't exile more cards than the generic mana requirement of a spell with delve. For example, you can't exile more than nine cards from your graveyard to cast Dead Drop."
+    }, {
+        "date": "2014-09-20",
+        "text": "Because delve isn't an alternative cost, it can be used in conjunction with alternative costs."
+    }],
+    "foreignNames": [{
+        "name": "跛行随侍",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386931&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386931
+    }, {
+        "name": "跛行隨侍",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387200&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387200
+    }, {
+        "name": "Serviteurs titubants",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387738&type=card",
+        "language": "French",
+        "multiverseid": 387738
+    }, {
+        "name": "Schlurfende Dienerschaft",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387469&type=card",
+        "language": "German",
+        "multiverseid": 387469
+    }, {
+        "name": "Servitori Barcollanti",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388007&type=card",
+        "language": "Italian",
+        "multiverseid": 388007
+    }, {
+        "name": "よろめく従者",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388276&type=card",
+        "language": "Japanese",
+        "multiverseid": 388276
+    }, {
+        "name": "어기적거리는 수행원",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388545&type=card",
+        "language": "Korean",
+        "multiverseid": 388545
+    }, {
+        "name": "Servos Trôpegos",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388814&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388814
+    }, {
+        "name": "Шаркающие Служители",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389083&type=card",
+        "language": "Russian",
+        "multiverseid": 389083
+    }, {
+        "name": "Asistentes tambaleantes",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389352&type=card",
+        "language": "Spanish",
+        "multiverseid": 389352
+    }],
+    "printings": ["KTK"],
+    "originalText": "Delve (Each card you exile from your graveyard while casting this spell pays for {1}.)\nDeathtouch (Any amount of damage this deals to a creature is enough to destroy it.)",
+    "originalType": "Creature — Zombie",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "1fa72fd8842863c947c7266cdca5057cbae7d42f"
+}, {
+    "name": "Trumpet Blast",
+    "manaCost": "{2}{R}",
+    "cmc": 3,
+    "colors": ["Red"],
+    "type": "Instant",
+    "types": ["Instant"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Attacking creatures get +2/+0 until end of turn.",
+    "flavor": "\"Do you hear that, Sarkhan? The glory of the horde! I made a legend from what you abandoned.\"\n—Zurgo, khan of the Mardu",
+    "artist": "Steve Prescott",
+    "number": "124",
+    "layout": "normal",
+    "multiverseid": 386706,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386706&type=card",
+    "rulings": [{
+        "date": "2009-10-01",
+        "text": "An \"attacking creature\" is one that has been declared as an attacker this combat, or one that was put onto the battlefield attacking this combat. Unless that creature leaves combat, it continues to be an attacking creature through the end of combat step, even if the player it was attacking has left the game, or the planeswalker it was attacking has left combat."
+    }, {
+        "date": "2009-10-01",
+        "text": "Even though Trumpet Blast affects only attacking creatures, the bonus will remain for the rest of the turn."
+    }, {
+        "date": "2014-09-20",
+        "text": "Only creatures that are attacking as Trumpet Blast resolves will receive the bonus. In other words, casting it before you've declared attackers usually won't do anything."
+    }],
+    "foreignNames": [{
+        "name": "号角震天",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386975&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386975
+    }, {
+        "name": "號角震天",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387244&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387244
+    }, {
+        "name": "Sonnerie de trompe",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387782&type=card",
+        "language": "French",
+        "multiverseid": 387782
+    }, {
+        "name": "Trompetenstoß",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387513&type=card",
+        "language": "German",
+        "multiverseid": 387513
+    }, {
+        "name": "Squillo di Trombe",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388051&type=card",
+        "language": "Italian",
+        "multiverseid": 388051
+    }, {
+        "name": "ラッパの一吹き",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388320&type=card",
+        "language": "Japanese",
+        "multiverseid": 388320
+    }, {
+        "name": "뿔나팔 소리",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388589&type=card",
+        "language": "Korean",
+        "multiverseid": 388589
+    }, {
+        "name": "Soar da Trombeta",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388858&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388858
+    }, {
+        "name": "Звук Трубы",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389127&type=card",
+        "language": "Russian",
+        "multiverseid": 389127
+    }, {
+        "name": "Trompetazo",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389396&type=card",
+        "language": "Spanish",
+        "multiverseid": 389396
+    }],
+    "printings": ["UDS", "M10", "M13", "CNS", "KTK", "CN2"],
+    "originalText": "Attacking creatures get +2/+0 until end of turn.",
+    "originalType": "Instant",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Urza Block",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "dbb13f7c18d36670c4288f8c5637cf5035ce48aa"
+}, {
+    "name": "Longshot Squad",
+    "manaCost": "{3}{G}",
+    "cmc": 4,
+    "colors": ["Green"],
+    "type": "Creature — Hound Archer",
+    "types": ["Creature"],
+    "subtypes": ["Hound", "Archer"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Outlast {1}{G} ({1}{G}, {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.)\nEach creature you control with a +1/+1 counter on it has reach. (A creature with reach can block creatures with flying.)",
+    "artist": "Wesley Burt",
+    "number": "140",
+    "power": "3",
+    "toughness": "3",
+    "layout": "normal",
+    "multiverseid": 386588,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386588&type=card",
+    "watermark": "Abzan",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "The cost to activate a creature's outlast ability includes the tap symbol ({T}). A creature's outlast ability can't be activated unless that creature has been under your control continuously since the beginning of your turn."
+    }, {
+        "date": "2014-09-20",
+        "text": "Several creatures with outlast also grant an ability to creatures you control with +1/+1 counters on them, including themselves. These counters could come from an outlast ability, but any +1/+1 counter on the creature will count."
+    }],
+    "foreignNames": [{
+        "name": "穿杨小队",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386857&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386857
+    }, {
+        "name": "穿楊小隊",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387126&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387126
+    }, {
+        "name": "Escouade de tir à longue distance",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387664&type=card",
+        "language": "French",
+        "multiverseid": 387664
+    }, {
+        "name": "Weitschuss-Trupp",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387395&type=card",
+        "language": "German",
+        "multiverseid": 387395
+    }, {
+        "name": "Squadra di Tiratori",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387933&type=card",
+        "language": "Italian",
+        "multiverseid": 387933
+    }, {
+        "name": "遠射兵団",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388202&type=card",
+        "language": "Japanese",
+        "multiverseid": 388202
+    }, {
+        "name": "저격 부대",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388471&type=card",
+        "language": "Korean",
+        "multiverseid": 388471
+    }, {
+        "name": "Esquadrão Tiro-longo",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388740&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388740
+    }, {
+        "name": "Дальнобойный Отряд",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389009&type=card",
+        "language": "Russian",
+        "multiverseid": 389009
+    }, {
+        "name": "Escuadra certera",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389278&type=card",
+        "language": "Spanish",
+        "multiverseid": 389278
+    }],
+    "printings": ["KTK"],
+    "originalText": "Outlast {1}{G} ({1}{G}, {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.)\nEach creature you control with a +1/+1 counter on it has reach. (A creature with reach can block creatures with flying.)",
+    "originalType": "Creature — Hound Archer",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "287a42f387b91edb7e5997c8f119df0f55e7befd"
+}, {
+    "name": "Bloodfell Caves",
+    "type": "Land",
+    "types": ["Land"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Bloodfell Caves enters the battlefield tapped.\nWhen Bloodfell Caves enters the battlefield, you gain 1 life.\n{T}: Add {B} or {R} to your mana pool.",
+    "artist": "Adam Paquette",
+    "number": "229",
+    "layout": "normal",
+    "multiverseid": 386491,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386491&type=card",
+    "foreignNames": [{
+        "name": "染血洞窟",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386760&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386760
+    }, {
+        "name": "染血洞窟",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387029&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387029
+    }, {
+        "name": "Cavernes du Sacrifice",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387567&type=card",
+        "language": "French",
+        "multiverseid": 387567
+    }, {
+        "name": "Höhlen des Blutvergießens",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387298&type=card",
+        "language": "German",
+        "multiverseid": 387298
+    }, {
+        "name": "Caverne del Sangue Versato",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387836&type=card",
+        "language": "Italian",
+        "multiverseid": 387836
+    }, {
+        "name": "血溜まりの洞窟",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388105&type=card",
+        "language": "Japanese",
+        "multiverseid": 388105
+    }, {
+        "name": "핏자국 동굴",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388374&type=card",
+        "language": "Korean",
+        "multiverseid": 388374
+    }, {
+        "name": "Cavernas Sanguinárias",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388643&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388643
+    }, {
+        "name": "Пещеры Пролитой Крови",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388912&type=card",
+        "language": "Russian",
+        "multiverseid": 388912
+    }, {
+        "name": "Cuevas maculasangrientas",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389181&type=card",
+        "language": "Spanish",
+        "multiverseid": 389181
+    }],
+    "printings": ["KTK", "FRF", "EMA"],
+    "originalText": "Bloodfell Caves enters the battlefield tapped.\nWhen Bloodfell Caves enters the battlefield, you gain 1 life.\n{T}: Add {B} or {R} to your mana pool.",
+    "originalType": "Land",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "43c52182c0f8f472cfced534c2f8b39d7d84b402"
+}, {
+    "name": "Mardu Hordechief",
+    "manaCost": "{2}{W}",
+    "cmc": 3,
+    "colors": ["White"],
+    "type": "Creature — Human Warrior",
+    "types": ["Creature"],
+    "subtypes": ["Human", "Warrior"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Raid — When Mardu Hordechief enters the battlefield, if you attacked with a creature this turn, create a 1/1 white Warrior creature token.",
+    "flavor": "The horde grows with each assault.",
+    "artist": "Torstein Nordstrand",
+    "number": "17",
+    "power": "2",
+    "toughness": "3",
+    "layout": "normal",
+    "multiverseid": 386596,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386596&type=card",
+    "watermark": "Mardu",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Raid abilities care only that you attacked with a creature. It doesn't matter how many creatures you attacked with, or which opponent or planeswalker controlled by an opponent those creatures attacked."
+    }, {
+        "date": "2014-09-20",
+        "text": "Raid abilities evaluate the entire turn to see if you attacked with a creature. That creature doesn't have to still be on the battlefield. Similarly, the player or planeswalker it attacked doesn't have to still be in the game or on the battlefield, respectively."
+    }],
+    "foreignNames": [{
+        "name": "玛尔都部落长",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386865&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386865
+    }, {
+        "name": "瑪爾都部落長",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387134&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387134
+    }, {
+        "name": "Chef de horde marduen",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387672&type=card",
+        "language": "French",
+        "multiverseid": 387672
+    }, {
+        "name": "Mardu-Hordenhäuptling",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387403&type=card",
+        "language": "German",
+        "multiverseid": 387403
+    }, {
+        "name": "Condottiero dell'Orda Mardu",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387941&type=card",
+        "language": "Italian",
+        "multiverseid": 387941
+    }, {
+        "name": "マルドゥの軍族長",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388210&type=card",
+        "language": "Japanese",
+        "multiverseid": 388210
+    }, {
+        "name": "마르두 족장",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388479&type=card",
+        "language": "Korean",
+        "multiverseid": 388479
+    }, {
+        "name": "Chefe da Horda Mardu",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388748&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388748
+    }, {
+        "name": "Вождь Орды Марду",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389017&type=card",
+        "language": "Russian",
+        "multiverseid": 389017
+    }, {
+        "name": "Jefe de hordas mardu",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389286&type=card",
+        "language": "Spanish",
+        "multiverseid": 389286
+    }],
+    "printings": ["KTK"],
+    "originalText": "Raid — When Mardu Hordechief enters the battlefield, if you attacked with a creature this turn, put a 1/1 white Warrior creature token onto the battlefield.",
+    "originalType": "Creature — Human Warrior",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "f76fe24ffda42e428c4eed0569d6a4113075a484"
+}, {
+    "name": "Abzan Guide",
+    "manaCost": "{3}{W}{B}{G}",
+    "cmc": 6,
+    "colors": ["White", "Black", "Green"],
+    "type": "Creature — Human Warrior",
+    "types": ["Creature"],
+    "subtypes": ["Human", "Warrior"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Lifelink (Damage dealt by this creature also causes you to gain that much life.)\nMorph {2}{W}{B}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+    "flavor": "\"These roads are desolate and changeable. Follow me, or die in the wastes.\"",
+    "artist": "Steve Prescott",
+    "number": "162",
+    "power": "4",
+    "toughness": "4",
+    "layout": "normal",
+    "multiverseid": 386469,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386469&type=card",
+    "watermark": "Abzan",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Morph lets you cast a card face down by paying {3}, and lets you turn the face-down permanent face up any time you have priority by paying its morph cost."
+    }, {
+        "date": "2014-09-20",
+        "text": "The face-down spell has no mana cost and has a converted mana cost of 0. When you cast a face-down spell, put it on the stack face down so no other player knows what it is, and pay {3}. This is an alternative cost."
+    }, {
+        "date": "2014-09-20",
+        "text": "When the spell resolves, it enters the battlefield as a 2/2 creature with no name, mana cost, creature types, or abilities. It's colorless and has a converted mana cost of 0. Other effects that apply to the creature can still grant it any of these characteristics."
+    }, {
+        "date": "2014-09-20",
+        "text": "Any time you have priority, you may turn the face-down creature face up by revealing what its morph cost is and paying that cost. This is a special action. It doesn't use the stack and can't be responded to. Only a face-down permanent can be turned face up this way; a face-down spell cannot."
+    }, {
+        "date": "2014-09-20",
+        "text": "Because the permanent is on the battlefield both before and after it's turned face up, turning a permanent face up doesn't cause any enters-the-battlefield abilities to trigger."
+    }, {
+        "date": "2014-09-20",
+        "text": "A permanent that turns face up or face down changes characteristics but is otherwise the same permanent. Spells and abilities that were targeting that permanent, as well as Auras and Equipment that were attached to the permanent, aren't affected."
+    }, {
+        "date": "2014-09-20",
+        "text": "At any time, you can look at a face-down spell or permanent you control. You can't look at face-down spells or permanents you don't control unless an effect instructs you to do so."
+    }, {
+        "date": "2014-09-20",
+        "text": "You must ensure that your face-down spells and permanents can easily be differentiated from each other. You're not allowed to mix up the cards that represent them on the battlefield in order to confuse other players. The order they entered the battlefield should remain clear. Common methods for doing this include using markers or dice, or simply placing them in order on the battlefield."
+    }, {
+        "date": "2014-09-20",
+        "text": "If a face-down permanent leaves the battlefield, you must reveal it. You must also reveal all face-down spells and permanents you control if you leave the game or if the game ends."
+    }],
+    "foreignNames": [{
+        "name": "阿布赞向导",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386738&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386738
+    }, {
+        "name": "阿布贊嚮導",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387007&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387007
+    }, {
+        "name": "Guide abzane",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387545&type=card",
+        "language": "French",
+        "multiverseid": 387545
+    }, {
+        "name": "Abzan-Führerin",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387276&type=card",
+        "language": "German",
+        "multiverseid": 387276
+    }, {
+        "name": "Guida Abzan",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387814&type=card",
+        "language": "Italian",
+        "multiverseid": 387814
+    }, {
+        "name": "アブザンの先達",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388083&type=card",
+        "language": "Japanese",
+        "multiverseid": 388083
+    }, {
+        "name": "아브잔 길잡이",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388352&type=card",
+        "language": "Korean",
+        "multiverseid": 388352
+    }, {
+        "name": "Guia Azban",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388621&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388621
+    }, {
+        "name": "Абзанская Проводница",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388890&type=card",
+        "language": "Russian",
+        "multiverseid": 388890
+    }, {
+        "name": "Guía abzana",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389159&type=card",
+        "language": "Spanish",
+        "multiverseid": 389159
+    }],
+    "printings": ["KTK"],
+    "originalText": "Lifelink (Damage dealt by this creature also causes you to gain that much life.)\nMorph {2}{W}{B}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+    "originalType": "Creature — Human Warrior",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "2853d671b34ed33d74fea0e763cc99b23ea77a13"
+}, {
+    "name": "Abomination of Gudul",
+    "manaCost": "{3}{B}{G}{U}",
+    "cmc": 6,
+    "colors": ["Blue", "Black", "Green"],
+    "type": "Creature — Horror",
+    "types": ["Creature"],
+    "subtypes": ["Horror"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Flying\nWhenever Abomination of Gudul deals combat damage to a player, you may draw a card. If you do, discard a card.\nMorph {2}{B}{G}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+    "artist": "Erica Yang",
+    "number": "159",
+    "power": "3",
+    "toughness": "4",
+    "layout": "normal",
+    "multiverseid": 386463,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386463&type=card",
+    "watermark": "Sultai",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Morph lets you cast a card face down by paying {3}, and lets you turn the face-down permanent face up any time you have priority by paying its morph cost."
+    }, {
+        "date": "2014-09-20",
+        "text": "The face-down spell has no mana cost and has a converted mana cost of 0. When you cast a face-down spell, put it on the stack face down so no other player knows what it is, and pay {3}. This is an alternative cost."
+    }, {
+        "date": "2014-09-20",
+        "text": "When the spell resolves, it enters the battlefield as a 2/2 creature with no name, mana cost, creature types, or abilities. It's colorless and has a converted mana cost of 0. Other effects that apply to the creature can still grant it any of these characteristics."
+    }, {
+        "date": "2014-09-20",
+        "text": "Any time you have priority, you may turn the face-down creature face up by revealing what its morph cost is and paying that cost. This is a special action. It doesn't use the stack and can't be responded to. Only a face-down permanent can be turned face up this way; a face-down spell cannot."
+    }, {
+        "date": "2014-09-20",
+        "text": "Because the permanent is on the battlefield both before and after it's turned face up, turning a permanent face up doesn't cause any enters-the-battlefield abilities to trigger."
+    }, {
+        "date": "2014-09-20",
+        "text": "A permanent that turns face up or face down changes characteristics but is otherwise the same permanent. Spells and abilities that were targeting that permanent, as well as Auras and Equipment that were attached to the permanent, aren't affected."
+    }, {
+        "date": "2014-09-20",
+        "text": "At any time, you can look at a face-down spell or permanent you control. You can't look at face-down spells or permanents you don't control unless an effect instructs you to do so."
+    }, {
+        "date": "2014-09-20",
+        "text": "You must ensure that your face-down spells and permanents can easily be differentiated from each other. You're not allowed to mix up the cards that represent them on the battlefield in order to confuse other players. The order they entered the battlefield should remain clear. Common methods for doing this include using markers or dice, or simply placing them in order on the battlefield."
+    }, {
+        "date": "2014-09-20",
+        "text": "If a face-down permanent leaves the battlefield, you must reveal it. You must also reveal all face-down spells and permanents you control if you leave the game or if the game ends."
+    }],
+    "foreignNames": [{
+        "name": "谷渡憎恨兽",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386732&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386732
+    }, {
+        "name": "谷渡憎恨獸",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387001&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387001
+    }, {
+        "name": "Abomination de Gudùl",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387539&type=card",
+        "language": "French",
+        "multiverseid": 387539
+    }, {
+        "name": "Gudul-Scheußlichkeit",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387270&type=card",
+        "language": "German",
+        "multiverseid": 387270
+    }, {
+        "name": "Abominio di Gudul",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387808&type=card",
+        "language": "Italian",
+        "multiverseid": 387808
+    }, {
+        "name": "グドゥルの嫌悪者",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388077&type=card",
+        "language": "Japanese",
+        "multiverseid": 388077
+    }, {
+        "name": "구둘의 흉물",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388346&type=card",
+        "language": "Korean",
+        "multiverseid": 388346
+    }, {
+        "name": "Abominação de Gudul",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388615&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388615
+    }, {
+        "name": "Гудульская Мерзость",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388884&type=card",
+        "language": "Russian",
+        "multiverseid": 388884
+    }, {
+        "name": "Abominación de Gudul",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389153&type=card",
+        "language": "Spanish",
+        "multiverseid": 389153
+    }],
+    "printings": ["KTK"],
+    "originalText": "Flying\nWhenever Abomination of Gudul deals combat damage to a player, you may draw a card. If you do, discard a card.\nMorph {2}{B}{G}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+    "originalType": "Creature — Horror",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "af0954960652faeb4fd6bce309e6c09ebfcade31"
+}, {
+    "name": "Barrage of Boulders",
+    "manaCost": "{2}{R}",
+    "cmc": 3,
+    "colors": ["Red"],
+    "type": "Sorcery",
+    "types": ["Sorcery"],
+    "rarity": "Common",
+    "set": "KTK",
+    "text": "Barrage of Boulders deals 1 damage to each creature you don't control.\nFerocious — If you control a creature with power 4 or greater, creatures can't block this turn.",
+    "flavor": "Crude tactics can be effective nonetheless.",
+    "artist": "Zoltan Boros",
+    "number": "100",
+    "layout": "normal",
+    "multiverseid": 386485,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386485&type=card",
+    "watermark": "Temur",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Barrage of Boulders deals damage only to creatures you don't control as it resolves. However, the ferocious ability affects all creatures, including ones you control and ones that weren't on the battlefield as Barrage of Boulders resolved."
+    }, {
+        "date": "2014-09-20",
+        "text": "Some ferocious abilities that appear on instants and sorceries use the word \"instead.\" These spells have an upgraded effect if you control a creature with power 4 or greater as they resolve. For these, you only get the upgraded effect, not both effects."
+    }, {
+        "date": "2014-09-20",
+        "text": "Ferocious abilities of instants and sorceries that don't use the word \"instead\" will provide an additional effect if you control a creature with power 4 or greater as they resolve."
+    }],
+    "foreignNames": [{
+        "name": "巨石齐落",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386754&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386754
+    }, {
+        "name": "巨石齊落",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387023&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387023
+    }, {
+        "name": "Barrage de rochers",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387561&type=card",
+        "language": "French",
+        "multiverseid": 387561
+    }, {
+        "name": "Felsbeschuss",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387292&type=card",
+        "language": "German",
+        "multiverseid": 387292
+    }, {
+        "name": "Bombardamento di Massi",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387830&type=card",
+        "language": "Italian",
+        "multiverseid": 387830
+    }, {
+        "name": "石弾の弾幕",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388099&type=card",
+        "language": "Japanese",
+        "multiverseid": 388099
+    }, {
+        "name": "낙석 더미",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388368&type=card",
+        "language": "Korean",
+        "multiverseid": 388368
+    }, {
+        "name": "Barragem de Pedregulhos",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388637&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388637
+    }, {
+        "name": "Град Булыжников",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388906&type=card",
+        "language": "Russian",
+        "multiverseid": 388906
+    }, {
+        "name": "Bombardeo de rocas",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389175&type=card",
+        "language": "Spanish",
+        "multiverseid": 389175
+    }],
+    "printings": ["KTK"],
+    "originalText": "Barrage of Boulders deals 1 damage to each creature you don't control.\nFerocious — If you control a creature with power 4 or greater, creatures can't block this turn.",
+    "originalType": "Sorcery",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "b6abaad65fe780e33f6b2670b8fc292e7aed2c6a"
+}, {
+    "name": "Rotting Mastodon",
+    "manaCost": "{4}{B}",
+    "cmc": 5,
+    "colors": ["Black"],
+    "type": "Creature — Zombie Elephant",
+    "types": ["Creature"],
+    "subtypes": ["Zombie", "Elephant"],
+    "rarity": "Common",
+    "set": "KTK",
+    "flavor": "Mastodons became extinct long ago, but foul forces of the Gurmag Swamp sometimes animate their decaying remains. The Sultai happily exploit such creatures but consider them inferior to their own necromantic creations.",
+    "artist": "Nils Hamm",
+    "number": "87",
+    "power": "2",
+    "toughness": "8",
+    "layout": "normal",
+    "multiverseid": 386640,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386640&type=card",
+    "foreignNames": [{
+        "name": "腐臭乳齿象",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386909&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386909
+    }, {
+        "name": "腐臭乳齒象",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387178&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387178
+    }, {
+        "name": "Mastodonte pourrissant",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387716&type=card",
+        "language": "French",
+        "multiverseid": 387716
+    }, {
+        "name": "Verwesendes Mastodon",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387447&type=card",
+        "language": "German",
+        "multiverseid": 387447
+    }, {
+        "name": "Mastodonte in Decomposizione",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387985&type=card",
+        "language": "Italian",
+        "multiverseid": 387985
+    }, {
+        "name": "朽ちゆくマストドン",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388254&type=card",
+        "language": "Japanese",
+        "multiverseid": 388254
+    }, {
+        "name": "썩어가는 마스토돈",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388523&type=card",
+        "language": "Korean",
+        "multiverseid": 388523
+    }, {
+        "name": "Mastodonte Apodrecido",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388792&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388792
+    }, {
+        "name": "Гниющий Мастодонт",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389061&type=card",
+        "language": "Russian",
+        "multiverseid": 389061
+    }, {
+        "name": "Mastodonte putrefacto",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389330&type=card",
+        "language": "Spanish",
+        "multiverseid": 389330
+    }],
+    "printings": ["KTK"],
+    "originalType": "Creature — Zombie Elephant",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "dca01d91ed38536413ccabd375758ee3cf550a04"
+}, {
+    "name": "Swamp",
+    "type": "Basic Land — Swamp",
+    "supertypes": ["Basic"],
+    "types": ["Land"],
+    "subtypes": ["Swamp"],
+    "rarity": "Basic Land",
+    "set": "KTK",
+    "artist": "Sam Burley",
+    "number": "259",
+    "layout": "normal",
+    "multiverseid": 386686,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386686&type=card",
+    "variations": [386683, 386684, 386685],
+    "foreignNames": [{
+        "name": "沼澤",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387221&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387221
+    }, {
+        "name": "沼澤",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387222&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387222
+    }, {
+        "name": "沼澤",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387223&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387223
+    }, {
+        "name": "沼澤",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387224&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387224
+    }, {
+        "name": "Marais",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387759&type=card",
+        "language": "French",
+        "multiverseid": 387759
+    }, {
+        "name": "Marais",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387760&type=card",
+        "language": "French",
+        "multiverseid": 387760
+    }, {
+        "name": "Marais",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387761&type=card",
+        "language": "French",
+        "multiverseid": 387761
+    }, {
+        "name": "Marais",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387762&type=card",
+        "language": "French",
+        "multiverseid": 387762
+    }, {
+        "name": "Sumpf",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387490&type=card",
+        "language": "German",
+        "multiverseid": 387490
+    }, {
+        "name": "Sumpf",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387491&type=card",
+        "language": "German",
+        "multiverseid": 387491
+    }, {
+        "name": "Sumpf",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387492&type=card",
+        "language": "German",
+        "multiverseid": 387492
+    }, {
+        "name": "Sumpf",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387493&type=card",
+        "language": "German",
+        "multiverseid": 387493
+    }, {
+        "name": "Palude",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388028&type=card",
+        "language": "Italian",
+        "multiverseid": 388028
+    }, {
+        "name": "Palude",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388029&type=card",
+        "language": "Italian",
+        "multiverseid": 388029
+    }, {
+        "name": "Palude",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388030&type=card",
+        "language": "Italian",
+        "multiverseid": 388030
+    }, {
+        "name": "Palude",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388031&type=card",
+        "language": "Italian",
+        "multiverseid": 388031
+    }, {
+        "name": "沼",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388297&type=card",
+        "language": "Japanese",
+        "multiverseid": 388297
+    }, {
+        "name": "沼",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388298&type=card",
+        "language": "Japanese",
+        "multiverseid": 388298
+    }, {
+        "name": "沼",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388299&type=card",
+        "language": "Japanese",
+        "multiverseid": 388299
+    }, {
+        "name": "沼",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388300&type=card",
+        "language": "Japanese",
+        "multiverseid": 388300
+    }, {
+        "name": "늪",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388566&type=card",
+        "language": "Korean",
+        "multiverseid": 388566
+    }, {
+        "name": "늪",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388567&type=card",
+        "language": "Korean",
+        "multiverseid": 388567
+    }, {
+        "name": "늪",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388568&type=card",
+        "language": "Korean",
+        "multiverseid": 388568
+    }, {
+        "name": "늪",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388569&type=card",
+        "language": "Korean",
+        "multiverseid": 388569
+    }, {
+        "name": "Pantano",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389373&type=card",
+        "language": "Spanish",
+        "multiverseid": 389373
+    }],
+    "printings": ["LEA", "LEB", "2ED", "CED", "CEI", "3ED", "4ED", "ICE", "RQS", "pARL", "MIR", "ITP", "5ED", "POR", "TMP", "pJGP", "PO2", "UGL", "pALP", "USG", "ATH", "6ED", "PTK", "pGRU", "S99", "MMQ", "BRB", "pELP", "S00", "BTD", "INV", "7ED", "ODY", "DKM", "ONS", "8ED", "MRD", "CHK", "UNH", "9ED", "RAV", "CST", "TSP", "10E", "MED", "LRW", "SHM", "ALA", "DDC", "M10", "HOP", "ME3", "ZEN", "DDD", "H09", "DDE", "ROE", "DPA", "ARC", "M11", "SOM", "MBS", "NPH", "CMD", "M12", "DDH", "ISD", "PD3", "AVR", "PC2", "M13", "DDJ", "RTR", "DDK", "M14", "THS", "C13", "DDM", "MD1", "M15", "DDN", "KTK", "C14", "DD3_DVD", "DD3_GVL", "FRF", "DTK", "TPR", "ORI", "DDP", "BFZ", "C15", "DDQ", "SOI", "DDR", "KLD", "C16", "PCA", "AKH"],
+    "originalText": "B",
+    "originalType": "Basic Land — Swamp",
+    "legalities": [{
+        "format": "Amonkhet Block",
+        "legality": "Legal"
+    }, {
+        "format": "Battle for Zendikar Block",
+        "legality": "Legal"
+    }, {
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Ice Age Block",
+        "legality": "Legal"
+    }, {
+        "format": "Innistrad Block",
+        "legality": "Legal"
+    }, {
+        "format": "Invasion Block",
+        "legality": "Legal"
+    }, {
+        "format": "Kaladesh Block",
+        "legality": "Legal"
+    }, {
+        "format": "Kamigawa Block",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Lorwyn-Shadowmoor Block",
+        "legality": "Legal"
+    }, {
+        "format": "Masques Block",
+        "legality": "Legal"
+    }, {
+        "format": "Mirage Block",
+        "legality": "Legal"
+    }, {
+        "format": "Mirrodin Block",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Odyssey Block",
+        "legality": "Legal"
+    }, {
+        "format": "Onslaught Block",
+        "legality": "Legal"
+    }, {
+        "format": "Ravnica Block",
+        "legality": "Legal"
+    }, {
+        "format": "Return to Ravnica Block",
+        "legality": "Legal"
+    }, {
+        "format": "Scars of Mirrodin Block",
+        "legality": "Legal"
+    }, {
+        "format": "Shadows over Innistrad Block",
+        "legality": "Legal"
+    }, {
+        "format": "Shards of Alara Block",
+        "legality": "Legal"
+    }, {
+        "format": "Standard",
+        "legality": "Legal"
+    }, {
+        "format": "Tempest Block",
+        "legality": "Legal"
+    }, {
+        "format": "Theros Block",
+        "legality": "Legal"
+    }, {
+        "format": "Time Spiral Block",
+        "legality": "Legal"
+    }, {
+        "format": "Un-Sets",
+        "legality": "Legal"
+    }, {
+        "format": "Urza Block",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }, {
+        "format": "Zendikar Block",
+        "legality": "Legal"
+    }],
+    "id": "16df05e48b32288dccfd3c6c7f3a2f1858f63978"
+}];
+
+var picks = [{
+    "name": "Mox Ruby",
+    "manaCost": "{0}",
+    "cmc": 0,
+    "colorIdentity": ["R"],
+    "type": "Artifact",
+    "types": ["Artifact"],
+    "rarity": "Rare",
+    "set": "2ED",
+    "setName": "Unlimited Edition",
+    "text": "{T}: Add {R} to your mana pool.",
+    "artist": "Dan Frazier",
+    "layout": "normal",
+    "multiverseid": 632,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=632&type=card",
+    "reserved": true,
+    "printings": ["LEA", "LEB", "2ED", "CED", "CEI", "VMA"],
+    "originalText": "Add 1 red mana to your mana pool. Tapping this artifact can be played as an interrupt.",
+    "originalType": "Mono Artifact",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Banned"
+    }, {
+        "format": "Legacy",
+        "legality": "Banned"
+    }, {
+        "format": "Vintage",
+        "legality": "Restricted"
+    }],
+    "id": "1eb1815e80a831bf86eb5885fcca760259f2580a"
+}, {
+    "card": {
+        "name": "Time Walk",
+        "manaCost": "{1}{U}",
+        "cmc": 2,
+        "colors": ["Blue"],
+        "colorIdentity": ["U"],
+        "type": "Sorcery",
+        "types": ["Sorcery"],
+        "rarity": "Rare",
+        "set": "2ED",
+        "setName": "Unlimited Edition",
+        "text": "Take an extra turn after this one.",
+        "artist": "Amy Weber",
+        "layout": "normal",
+        "multiverseid": 728,
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=728&type=card",
+        "reserved": true,
+        "rulings": [{
+            "date": "2004-10-04",
+            "text": "If multiple \"extra turn\" effects resolve in the same turn, take them in the reverse of the order that the effects resolved."
+        }],
+        "printings": ["LEA", "LEB", "2ED", "CED", "CEI", "VMA"],
+        "originalText": "Take an extra turn after this one.",
+        "originalType": "Sorcery",
+        "legalities": [{
+            "format": "Commander",
+            "legality": "Banned"
+        }, {
+            "format": "Legacy",
+            "legality": "Banned"
+        }, {
+            "format": "Vintage",
+            "legality": "Restricted"
+        }],
+        "id": "a91764f0a390df55410be0fe6d82a30374ac5221"
+    }
+}];

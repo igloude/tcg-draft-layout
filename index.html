@@ -7,30 +7,32 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/vue"></script>
+
+    <!-- NOTE - referenceing local JSON data for dev purposes only -->
+    <script type="text/javascript" src="src/js/data.json"></script>
 </head>
 <body>
     <main class="site grid">
 
         <h1 class="site--title grid--contained">Draft-o-tron 5000</h1>
 
-        <section class="pack grid--contained">
+        <section id="draft" class="pack grid--contained">
             <div class="pack--meta meta--bar">
-                <p class="meta--title">Pack 1 | Pick 1</p>
+                <p class="meta--title">Pack {{ gameProgress.pack }} | Pick {{ gameProgress.pick }}</p>
                 <p class="meta--info">
-                    <span class="info--players">3 Players</span>
-                    <span class="info--description">Modern Masters 2017</span>
+                  <span class="info--players">{{ players }} Players</span>
+                  <span class="info--description">{{ description.long }}</span>
                 </p>
             </div>
-            <div class="pack--list">
-
-            </div>
+            <ul class="pack--list">
+                <li v-for="card in pack">
+                    {{ card.name }}
+                </li>
+            </ul>
         </section>
 
-        <section class="picks grid--contained">
+        <section id="player" class="picks grid--contained">
             <div class="picks--meta meta--bar">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
@@ -49,6 +51,6 @@
 
     </main>
 
-    <script src="dist/main.js" type="text/javascript"></script>
+    <script src="dist/main.js"></script>
 </body>
 </html>
