@@ -6,6 +6,7 @@
 Host creates a draft, choosing a set and some other options.
 <details>
 <summary>REST Request/Response Format</summary>
+
 ```HTTP
 POST /draft
 ```
@@ -44,6 +45,7 @@ POST /draft
 Client finds desired draft ID from draft lobby, or by being sent a draft URL by the host. Client requests entry into draft, server registers client and opens websocket connection. Clients begin in lobby view.
 <details>
 <summary>REST Request/Response Format</summary>
+
 ```HTTP
 POST /draft/{draftId}/players
 ```
@@ -86,6 +88,7 @@ POST /draft/{draftId}/players
 Clients are notified as each new player joins.
 <details>
 <summary>Socket Message Format</summary>
+
 ```json
 {
     "event": "player-joined",
@@ -101,6 +104,7 @@ Clients are notified as each new player joins.
 Host starts draft when ready.
 <details>
 <summary>REST Request/Response Format</summary>
+
 ```HTTP
 POST /draft/{draftId}/start
 ```
@@ -137,6 +141,7 @@ Empty request body
 When host starts draft, server notifies clients with their first pack. Clients should transition to draft view.
 <details>
 <summary>Socket Message Format</summary>
+
 ```json
 {
     "event": "new-pack",
@@ -214,7 +219,8 @@ When host starts draft, server notifies clients with their first pack. Clients s
 ### Pick Card
 Client requests pick of their choice. Server responds with their updated pool.
 <details>
-<summary>REST Request/Response Format</summary> m
+<summary>REST Request/Response Format</summary>
+
 ```HTTP
 POST /player/{playerId}/pick/{cardId}
 ```
@@ -274,6 +280,7 @@ When all players have picked, server adds picked cards to pools, notifies client
 
 <details>
 <summary>Socket Message Format</summary>
+
 ```json
 {
     "event": "pack-rotated",
@@ -335,6 +342,7 @@ Clients continue to pick cards until pack is drafted. When each pack has been co
 When all packs have been drafted, server notifies clients that draft is over. Clients should transition to draft summary view.
 <details>
 <summary>Socket Message Format</summary>
+
 ```json
 {
     "event": "draft-complete",
