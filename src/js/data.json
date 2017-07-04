@@ -1656,7 +1656,103 @@ var picks = [{
         "format": "Vintage",
         "legality": "Restricted"
     }],
-    "id": "1eb1815e80a831bf86eb5885fcca760259f2580a"
+    "id": "1eb1815e80a831bf86eb5885fcca760259f2580a",
+    "pickOrder": 1
+}, {
+    "name": "Master the Way",
+    "manaCost": "{3}{U}{R}",
+    "cmc": 5,
+    "colors": ["Blue", "Red"],
+    "type": "Sorcery",
+    "types": ["Sorcery"],
+    "rarity": "Uncommon",
+    "set": "KTK",
+    "text": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
+    "flavor": "\"The Way has no beginning and no end. It is simply the path.\"\n—Narset, khan of the Jeskai",
+    "artist": "Howard Lyon",
+    "number": "188",
+    "layout": "normal",
+    "multiverseid": 386601,
+    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386601&type=card",
+    "rulings": [{
+        "date": "2014-09-20",
+        "text": "Use the number of cards in your hand after you draw the card to determine how much damage Master the Way deals to the target creature or player. (Remember that Master the Way is not in your hand; it's on the stack.)"
+    }, {
+        "date": "2014-09-20",
+        "text": "If the creature or player is an illegal target as Master the Way tries to resolve, Master the Way will be countered and none of its effects will happen. You won't draw a card."
+    }],
+    "foreignNames": [{
+        "name": "通悟灵宗",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386870&type=card",
+        "language": "Chinese Simplified",
+        "multiverseid": 386870
+    }, {
+        "name": "通悟靈宗",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387139&type=card",
+        "language": "Chinese Traditional",
+        "multiverseid": 387139
+    }, {
+        "name": "Maîtriser la Voie",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387677&type=card",
+        "language": "French",
+        "multiverseid": 387677
+    }, {
+        "name": "Den Weg meistern",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387408&type=card",
+        "language": "German",
+        "multiverseid": 387408
+    }, {
+        "name": "Padroneggiare la Via",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387946&type=card",
+        "language": "Italian",
+        "multiverseid": 387946
+    }, {
+        "name": "道極め",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388215&type=card",
+        "language": "Japanese",
+        "multiverseid": 388215
+    }, {
+        "name": "도의 깨우침",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388484&type=card",
+        "language": "Korean",
+        "multiverseid": 388484
+    }, {
+        "name": "Dominar o Caminho",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388753&type=card",
+        "language": "Portuguese (Brazil)",
+        "multiverseid": 388753
+    }, {
+        "name": "Путь Мастера",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389022&type=card",
+        "language": "Russian",
+        "multiverseid": 389022
+    }, {
+        "name": "Dominar la sabiduría",
+        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389291&type=card",
+        "language": "Spanish",
+        "multiverseid": 389291
+    }],
+    "printings": ["KTK"],
+    "originalText": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
+    "originalType": "Sorcery",
+    "legalities": [{
+        "format": "Commander",
+        "legality": "Legal"
+    }, {
+        "format": "Khans of Tarkir Block",
+        "legality": "Legal"
+    }, {
+        "format": "Legacy",
+        "legality": "Legal"
+    }, {
+        "format": "Modern",
+        "legality": "Legal"
+    }, {
+        "format": "Vintage",
+        "legality": "Legal"
+    }],
+    "id": "9b65561b8f4ed6ae89715e8858dbff2f12f41a0a",
+    "pickOrder": 2
 }, {
     "name": "Anafenza, the Foremost",
     "manaCost": "{W}{B}{G}",
@@ -1761,99 +1857,6 @@ var picks = [{
         "format": "Vintage",
         "legality": "Legal"
     }],
-    "id": "84575c908afe702205978e9aa7af3ba52283ca99"
-}, {
-    "name": "Master the Way",
-    "manaCost": "{3}{U}{R}",
-    "cmc": 5,
-    "colors": ["Blue", "Red"],
-    "type": "Sorcery",
-    "types": ["Sorcery"],
-    "rarity": "Uncommon",
-    "set": "KTK",
-    "text": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
-    "flavor": "\"The Way has no beginning and no end. It is simply the path.\"\n—Narset, khan of the Jeskai",
-    "artist": "Howard Lyon",
-    "number": "188",
-    "layout": "normal",
-    "multiverseid": 386601,
-    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386601&type=card",
-    "rulings": [{
-        "date": "2014-09-20",
-        "text": "Use the number of cards in your hand after you draw the card to determine how much damage Master the Way deals to the target creature or player. (Remember that Master the Way is not in your hand; it's on the stack.)"
-    }, {
-        "date": "2014-09-20",
-        "text": "If the creature or player is an illegal target as Master the Way tries to resolve, Master the Way will be countered and none of its effects will happen. You won't draw a card."
-    }],
-    "foreignNames": [{
-        "name": "通悟灵宗",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386870&type=card",
-        "language": "Chinese Simplified",
-        "multiverseid": 386870
-    }, {
-        "name": "通悟靈宗",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387139&type=card",
-        "language": "Chinese Traditional",
-        "multiverseid": 387139
-    }, {
-        "name": "Maîtriser la Voie",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387677&type=card",
-        "language": "French",
-        "multiverseid": 387677
-    }, {
-        "name": "Den Weg meistern",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387408&type=card",
-        "language": "German",
-        "multiverseid": 387408
-    }, {
-        "name": "Padroneggiare la Via",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387946&type=card",
-        "language": "Italian",
-        "multiverseid": 387946
-    }, {
-        "name": "道極め",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388215&type=card",
-        "language": "Japanese",
-        "multiverseid": 388215
-    }, {
-        "name": "도의 깨우침",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388484&type=card",
-        "language": "Korean",
-        "multiverseid": 388484
-    }, {
-        "name": "Dominar o Caminho",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388753&type=card",
-        "language": "Portuguese (Brazil)",
-        "multiverseid": 388753
-    }, {
-        "name": "Путь Мастера",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389022&type=card",
-        "language": "Russian",
-        "multiverseid": 389022
-    }, {
-        "name": "Dominar la sabiduría",
-        "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389291&type=card",
-        "language": "Spanish",
-        "multiverseid": 389291
-    }],
-    "printings": ["KTK"],
-    "originalText": "Draw a card. Master the Way deals damage to target creature or player equal to the number of cards in your hand.",
-    "originalType": "Sorcery",
-    "legalities": [{
-        "format": "Commander",
-        "legality": "Legal"
-    }, {
-        "format": "Khans of Tarkir Block",
-        "legality": "Legal"
-    }, {
-        "format": "Legacy",
-        "legality": "Legal"
-    }, {
-        "format": "Modern",
-        "legality": "Legal"
-    }, {
-        "format": "Vintage",
-        "legality": "Legal"
-    }],
-    "id": "9b65561b8f4ed6ae89715e8858dbff2f12f41a0a"
+    "id": "84575c908afe702205978e9aa7af3ba52283ca99",
+    "pickOrder": 3
 }];
