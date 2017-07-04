@@ -26,8 +26,8 @@
                 </p>
             </div>
             <ul class="pack--list">
-                <li v-for="card in pack">
-                    {{ card.name }}
+                <li v-for="card in pack" class="card">
+                    <img :src="card.imageUrl" :alt="card.name">
                 </li>
             </ul>
         </section>
@@ -44,9 +44,11 @@
                     <li><a href="#" class="sort--anchor">Pick</a></li>
                 </ul>
             </div>
-            <div class="pick--list">
-
-            </div>
+            <ul class="pick--list">
+                <li v-for="card in picks" class="card">
+                    <img :src="card.imageUrl" :alt="card.name">
+                </li>
+            </ul>
         </section>
 
     </main>

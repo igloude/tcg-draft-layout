@@ -9,11 +9,14 @@ $spacer-sm: .5em;
 $spacer:    .75em;
 $spacer-lg:  1em;
 
+$container-width: 50em;
+
 $transition: .15s ease all;
 
 body {
     font: 16px "Roboto Condensed", helvetica, sans-serif;
     color: $black;
+    padding-bottom: $spacer-lg;
 }
 
 // page layout
@@ -21,7 +24,7 @@ body {
     display: grid;
     grid-template-columns:
         [viewport-start] minmax(1em, 1fr)
-        [container-start] minmax(0, 30em) [container-end]
+        [container-start] minmax(0, $container-width) [container-end]
         minmax(1em, 1fr) [viewport-end];
 }
 
@@ -37,6 +40,26 @@ body {
 
 .grid--full * {
     grid-column: container;
+}
+
+// cards
+.card {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// pack layout
+.pack--list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(20%, 1fr));
+}
+
+// pick list
+.pick--list {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(calc(100%/7), 1fr));
 }
 
 // typography
