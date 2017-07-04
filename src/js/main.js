@@ -12,6 +12,13 @@ var draft = new Vue({
         },
         players: 3,
         pack: pack // NOTE - this calls local data.json file referenced in the head
+    },
+
+    methods: {
+        pickCard: function(card) {
+            // NOTE - API call
+            console.log('I choose you, ' + card.name + '!');
+        }
     }
 })
 

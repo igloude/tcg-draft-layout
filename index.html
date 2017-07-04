@@ -29,7 +29,7 @@
                 </p>
             </div>
             <ul class="pack--list">
-                <li v-for="card in pack" class="card">
+                <li v-for="card in pack" class="card" @click="pickCard(card)">
                     <img :src="card.imageUrl" :alt="card.name">
                 </li>
             </ul>
