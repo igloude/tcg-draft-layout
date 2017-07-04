@@ -1,0 +1,44 @@
+$sort--horizontal-padding: 7px;
+
+.meta--bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: $spacer-sm;
+}
+.meta--title {
+    font-size: 1.5em;
+}
+.meta--info span {
+    display: block;
+    text-align: right;
+}
+.info--players {
+    font-size: .8em;
+}
+
+.meta--sort {
+    margin-right: -$sort--horizontal-padding;
+    li {
+        display: inline-block;
+    }
+}
+.sort--anchor {
+    font-size: .8em;
+    color: $black;
+    text-decoration: none;
+    padding: 3px $sort--horizontal-padding;
+    border-radius: 3px;
+    transition: $transition;
+
+    &.sort--anchor__small {
+        border-radius: 50%;
+    }
+    &:hover {
+        background: lighten($active, 10%);
+        cursor: pointer;
+    }
+    &.active {
+        background: $active;
+    }
+}

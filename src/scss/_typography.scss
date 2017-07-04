@@ -1,0 +1,11 @@
+body {
+    font: 16px "Roboto Condensed", helvetica, sans-serif;
+    color: $black;
+}
+
+.site--title {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: $spacer 0 $spacer-lg;
+}

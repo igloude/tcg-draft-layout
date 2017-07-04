@@ -1,0 +1,107 @@
+// @function parseSwitch()
+// @param $var  - valid as a $breakpoints key, number, "min", or "max"
+// @description - determine if query is single or double declaration
+@function parseSwitch($var) {
+    @if map_has_key($breakpoints, $var) or type-of($var) == "number" {
+        @return "double";
+    }
+
+    @else if $var == "max" or $var == "min" {
+        @return "single";
+    }
+
+    @else {
+        @return "err";
+    }
+}
+
+// @function parseWidth()
+// @param $width - valid as a $breakpoints key or number(w/ or w/o px suffix)
+// @description  - if $width is variable, get value -- if number, convert to px
+@function parseWidth($width) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @return $width;
+    }
+
+    @else if type-of($width) == "number" {
+        $width: $width + 0px;
+        @return $width;
+    }
+
+    @else {
+        @return "err";
+    }
+}
+
+// @mixin query()
+// @param $width   - accepts $breakpoints key, number (see parseWidth()) or special strings 'print' and 'retina'
+// @param $flex    - can be $breakpoints map key, number, "min", or "max"
+@mixin query($width, $flex: min) {
+
+    // determine second param type
+    $switch: parseSwitch($flex);
+
+    // get first param type
+    @if $width == "print" or $width == "retina" {
+        $switch: $width;
+    }
+    @else if type-of(parseWidth($width)) != "number" {
+        @error "'#{$width}' is not a legal value for query";
+    }
+    @else {
+        $width: parseWidth($width);
+    }
+
+    // throw warning
+    @if $switch == "err" {
+        @error "'#{$flex}' is not a legal value for query";
+    }
+
+    // double breakpoint range
+    @if $switch == "double" {
+        @if map_has_key($breakpoints, $flex) {
+            $flex: map_get($breakpoints, $flex);
+        }
+
+        $flex: $flex - 1px;
+
+        @media screen and (min-width: $width) and (max-width: $flex) {
+            @content;
+        }
+
+    }
+
+    // single breakpoint
+    @if $switch == "single" {
+        @if $flex == "max" {
+            $width: $width - 1px;
+        }
+
+        @media screen and (#{$flex}-width: $width) {
+            @content;
+        }
+
+    }
+
+    // print
+    @if $switch == "print" {
+        @media print {
+            @content;
+        }
+    }
+
+    // retina
+    @if $switch == "retina" {
+        @media screen
+        and (min-device-width: 1200px)
+        and (max-device-width: 1600px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (min--moz-device-pixel-ratio: 2)
+        and (-o-min-device-pixel-ratio: 2/1)
+        and (min-device-pixel-ratio: 2)
+        and (min-resolution: 192dpi) {
+            @content;
+        }
+    }
+}

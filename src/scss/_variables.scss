@@ -1,0 +1,19 @@
+$black: #222222;
+$blue:  #97DCFF;
+
+$active: $blue;
+
+$spacer-sm:      .5em;
+$spacer:         .75em;
+$spacer-lg:      1em;
+$spacer-element: 3.5em;
+
+$container-width: 50em;
+
+$breakpoints: (
+        "palm": 600px,
+        "hand": 900px,
+        "lap": 1200px
+);
+
+$transition: .15s ease all;

@@ -8,7 +8,7 @@ var draft = new Vue({
         },
         gameProgress: {
             pack: 1,
-            pick: 3
+            pick: 1
         },
         players: 3,
         pack: pack // NOTE - this calls local data.json file referenced in the head
@@ -17,6 +17,7 @@ var draft = new Vue({
     methods: {
         pickCard: function(card) {
             // NOTE - API call
+            this.gameProgress.pick++;
             console.log('I choose you, ' + card.name + '!');
         }
     }
