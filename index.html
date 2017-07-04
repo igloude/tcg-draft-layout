@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TCG Draft Layout Demo</title>
+    <title>Draft-o-tron 5000</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
@@ -31,7 +31,7 @@
                 </p>
             </div>
             <ul class="pack--list">
-                <li v-for="card in pack" class="card" @click="pickCard(card)">
+                <li v-for="card in pack" :key="card.multiverseid" class="card" @click="pickCard(card)">
                     <img :src="card.imageUrl" :alt="card.name">
                 </li>
             </ul>
@@ -41,10 +41,10 @@
             <div class="picks--meta meta--bar">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
-                    <li><a @click="aFirst(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'a' }">A</a></li>
-                    <li><a @click="zFirst(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'z' }">Z</a></li>
-                    <li><a @click="cost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
-                    <li><a @click="pick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
+                    <li><a @click="sortByA(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'a' }">A</a></li>
+                    <li><a @click="sortByZ(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'z' }">Z</a></li>
+                    <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
+                    <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
                 </ul>
             </div>
             <ul class="pick--list">

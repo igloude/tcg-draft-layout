@@ -1,3 +1,9 @@
+.with--bumper {
+    margin: $spacer-element 0;
+}
 .with--bumper__top {
     margin-top: $spacer-element;
+}
+.with--bumper__bottom {
+    margin-bottom: $spacer-element;
 }

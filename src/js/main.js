@@ -32,19 +32,19 @@ var player = new Vue({
     },
 
     methods: {
-        aFirst: function (picks) { // return picks sorted alpha a-z
+        sortByA: function (picks) {
             this.sortKey = 'a';
-            this.picks = _.orderBy(picks, 'name');
+            this.picks = _.orderBy(picks, ['name', 'cmc']);
         },
-        zFirst: function (picks) { // return picks sorted alpha z-a
+        sortByZ: function (picks) {
             this.sortKey = 'z';
-            this.picks = _.orderBy(picks, 'name', 'desc');
+            this.picks = _.orderBy(picks, ['name', 'cmc'], 'desc');
         },
-        cost: function (picks) { // return picks sorted by cost
+        sortByCost: function (picks) {
             this.sortKey = 'cost';
             this.picks = _.orderBy(picks, ['cmc', 'name']);
         },
-        pick: function(picks) {
+        sortByPick: function(picks) {
             this.sortKey = 'pick';
             this.picks = _.orderBy(picks, 'pickOrder');
         }
