@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="dist/main.css">
 
     <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js">
+
+    </script>
 
     <!-- NOTE - referenceing local JSON data for dev purposes only -->
     <script type="text/javascript" src="src/js/data.json"></script>
@@ -36,16 +39,14 @@
             <div class="picks--meta meta--bar">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
-                    <li><a href="#" class="sort--anchor sort--anchor__small active">A</a></li>
-                    <li><a href="#" class="sort--anchor sort--anchor__small">Z</a></li>
-                    <li><a href="#" class="sort--anchor">Group</a></li>
-                    <li><a href="#" class="sort--anchor">Type</a></li>
-                    <li><a href="#" class="sort--anchor">Cost</a></li>
-                    <li><a href="#" class="sort--anchor">Pick</a></li>
+                    <li><a @click="aFirst(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'a' }">A</a></li>
+                    <li><a @click="zFirst(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'z' }">Z</a></li>
+                    <li><a @click="cost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
+                    <li><a @click="pick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
                 </ul>
             </div>
             <ul class="pick--list">
-                <li v-for="card in picks" class="card">
+                <li v-for="card in picks" :key="card.multiverseid" class="card">
                     <img :src="card.imageUrl" :alt="card.name">
                 </li>
             </ul>

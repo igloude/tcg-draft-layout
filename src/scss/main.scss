@@ -111,6 +111,7 @@ $sort--horizontal-padding: 7px;
     }
     &:hover {
         background: lighten($active, 10%);
+        cursor: pointer;
     }
     &.active {
         background: $active;
