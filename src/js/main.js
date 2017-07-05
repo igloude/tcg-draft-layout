@@ -17,8 +17,15 @@ var draft = new Vue({
     methods: {
         pickCard: function(card) {
             // NOTE - API call
+
+            // remove chosen card from pack
+            this.pack.splice(this.pack.indexOf(card), 1)
+
+            // add chosen card to picks
+            player.picks.push(card);
+            
+            // increment pick counter
             this.gameProgress.pick++;
-            console.log('I choose you, ' + card.name + '!');
         }
     }
 })
