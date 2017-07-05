@@ -40,14 +40,6 @@ var player = new Vue({
     },
 
     methods: {
-        sortByA: function (picks) {
-            this.sortKey = 'a';
-            this.picks = _.orderBy(picks, ['name', 'cmc']);
-        },
-        sortByZ: function (picks) {
-            this.sortKey = 'z';
-            this.picks = _.orderBy(picks, ['name', 'cmc'], 'desc');
-        },
         sortByCost: function (picks) {
             this.sortKey = 'cost';
             this.picks = _.orderBy(picks, ['cmc', 'name']);
@@ -55,6 +47,43 @@ var player = new Vue({
         sortByPick: function(picks) {
             this.sortKey = 'pick';
             this.picks = _.orderBy(picks, 'pickOrder');
+        },
+        sortByColor: function(picks) {
+            this.sortKey = 'color';
+            _.forEach(this.picks, function(card) {
+                var k;
+                if (card.colors === undefined) {
+                    k = 8;
+                } else if (card.colors.length === 1) {
+                    switch(card.colors[0]) {
+                        case "White":
+                            k = 1;
+                            break;
+                        case "Blue":
+                            k = 2;
+                            break;
+                        case "Black":
+                            k = 3;
+                            break;
+                        case "Red":
+                            k = 4;
+                            break;
+                        case "Green":
+                            k = 5;
+                            break;
+                        case "Colorless":
+                            k = 6;
+                            break;
+                        default:
+                            k = 8;
+                    }
+                    card.colorKey = k;
+                } else if (card.colors.length > 1) {
+                    card.colorKey = 7;
+                }
+                console.log(card);
+            });
+            this.picks = _.orderBy(picks, 'colorKey');
         }
     }
 })

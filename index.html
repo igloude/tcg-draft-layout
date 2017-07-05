@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="dist/main.css">
 
     <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js">
 
     </script>
@@ -41,8 +42,7 @@
             <div class="picks--meta meta--bar">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
-                    <li><a @click="sortByA(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'a' }">A</a></li>
-                    <li><a @click="sortByZ(picks)" class="sort--anchor sort--anchor__small" :class="{ active: sortKey == 'z' }">Z</a></li>
+                    <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
                     <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
                     <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
                 </ul>
