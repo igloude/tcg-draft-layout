@@ -29,16 +29,18 @@ $sort--horizontal-padding: 7px;
     text-decoration: none;
     padding: 3px $sort--horizontal-padding;
     border-radius: 3px;
+    border: 1px solid $black;
     transition: $transition;
 
     &.sort--anchor__small {
         border-radius: 50%;
     }
     &:hover {
-        background: lighten($active, 10%);
+        background: lighten($black, 80%);
         cursor: pointer;
     }
     &.active {
-        background: $active;
+        background: $black;
+        color: $white;
     }
 }
