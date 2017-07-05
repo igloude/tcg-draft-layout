@@ -21,11 +21,12 @@ var draft = new Vue({
             // remove chosen card from pack
             this.pack.splice(this.pack.indexOf(card), 1)
 
+            // set pickOrder on card and increment counter
+            card.pickOrder = this.gameProgress.pick;
+            this.gameProgress.pick++;
+
             // add chosen card to picks
             player.picks.push(card);
-            
-            // increment pick counter
-            this.gameProgress.pick++;
         }
     }
 })
