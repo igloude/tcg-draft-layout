@@ -89,13 +89,13 @@ Clients are notified as each new player joins.
 <details>
 <summary>Socket Message Format</summary>
 
+```
+TOPIC /topic/draft/{draftId}/playerJoined
+```
 ```json
 {
-    "event": "player-joined",
-    "data": {
-        "id": "1d8128aa-e29b-4fe5-b8f5-6ef5073b5b62",
-        "name": "Player Name"
-    }
+    "id": "1d8128aa-e29b-4fe5-b8f5-6ef5073b5b62",
+    "name": "Player Name"
 }
 ```
 </details>
@@ -142,76 +142,76 @@ When host starts draft, server notifies clients with their first pack. Clients s
 <details>
 <summary>Socket Message Format</summary>
 
+```
+TOPIC /topic/draft/{draftId}/player/{playerId}/newPack
+```
 ```json
 {
-    "event": "new-pack",
-    "data": {
-        "id": "d73dc1dd-2002-4992-8843-84b9b102493a",
-        "cards": [
-            {
-                "id": "9a0f1c96-dae0-4fe1-9494-8ceacde80c41",
-                "name": "Binding Mummy",
-                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426708&type=card",
-                "metadata": {
-                    "artist": "Shreya Shetty",
-                    "set": "AKH",
-                    "text": "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
-                    "flavor": "What the gods decree, the mummies enforce.",
-                    "manaCost": "{1}{W}",
-                    "cmc": "2.0",
-                    "number": "6",
-                    "rarity": "Common",
-                    "power": "2",
-                    "toughness": "2",
-                    "colorIdentity": "W",
-                    "colors": "White",
-                    "type": "Creature — Zombie",
-                    "types": "Creature",
-                    "subtypes": "Zombie"
-                }
-            },
-            {
-                "id": "97c70ced-2bd7-434b-bcf4-23d811c10312",
-                "name": "Cartouche of Solidarity",
-                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426709&type=card",
-                "metadata": {
-                    "artist": "Kieran Yanner",
-                    "set": "AKH",
-                    "text": "Enchant creature you control\nWhen Cartouche of Solidarity enters the battlefield, create a 1/1 white Warrior creature token with vigilance.\nEnchanted creature gets +1/+1 and has first strike.",
-                    "manaCost": "{W}",
-                    "cmc": "1.0",
-                    "number": "7",
-                    "rarity": "Common",
-                    "colorIdentity": "W",
-                    "colors": "White",
-                    "type": "Enchantment — Aura Cartouche",
-                    "types": "Enchantment",
-                    "subtypes": "Aura,Cartouche"
-                }
-            },
-            {
-                "id": "9894fcfa-b475-4201-be5f-789593974016",
-                "name": "Devoted Crop-Mate",
-                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426712&type=card",
-                "metadata": {
-                    "artist": "Zoltan Boros",
-                    "set": "AKH",
-                    "text": "You may exert Devoted Crop-Mate as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. (An exerted creature won't untap during your next untap step.)",
-                    "manaCost": "{2}{W}",
-                    "cmc": "3.0",
-                    "number": "10",
-                    "rarity": "Uncommon",
-                    "power": "3",
-                    "toughness": "2",
-                    "colorIdentity": "W",
-                    "colors": "White",
-                    "type": "Creature — Human Warrior",
-                    "types": "Creature",
-                    "subtypes": "Human,Warrior"
-                }
+    "id": "d73dc1dd-2002-4992-8843-84b9b102493a",
+    "cards": [
+        {
+            "id": "9a0f1c96-dae0-4fe1-9494-8ceacde80c41",
+            "name": "Binding Mummy",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426708&type=card",
+            "metadata": {
+                "artist": "Shreya Shetty",
+                "set": "AKH",
+                "text": "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
+                "flavor": "What the gods decree, the mummies enforce.",
+                "manaCost": "{1}{W}",
+                "cmc": "2.0",
+                "number": "6",
+                "rarity": "Common",
+                "power": "2",
+                "toughness": "2",
+                "colorIdentity": "W",
+                "colors": "White",
+                "type": "Creature — Zombie",
+                "types": "Creature",
+                "subtypes": "Zombie"
             }
-        ]
-    }
+        },
+        {
+            "id": "97c70ced-2bd7-434b-bcf4-23d811c10312",
+            "name": "Cartouche of Solidarity",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426709&type=card",
+            "metadata": {
+                "artist": "Kieran Yanner",
+                "set": "AKH",
+                "text": "Enchant creature you control\nWhen Cartouche of Solidarity enters the battlefield, create a 1/1 white Warrior creature token with vigilance.\nEnchanted creature gets +1/+1 and has first strike.",
+                "manaCost": "{W}",
+                "cmc": "1.0",
+                "number": "7",
+                "rarity": "Common",
+                "colorIdentity": "W",
+                "colors": "White",
+                "type": "Enchantment — Aura Cartouche",
+                "types": "Enchantment",
+                "subtypes": "Aura,Cartouche"
+            }
+        },
+        {
+            "id": "9894fcfa-b475-4201-be5f-789593974016",
+            "name": "Devoted Crop-Mate",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426712&type=card",
+            "metadata": {
+                "artist": "Zoltan Boros",
+                "set": "AKH",
+                "text": "You may exert Devoted Crop-Mate as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. (An exerted creature won't untap during your next untap step.)",
+                "manaCost": "{2}{W}",
+                "cmc": "3.0",
+                "number": "10",
+                "rarity": "Uncommon",
+                "power": "3",
+                "toughness": "2",
+                "colorIdentity": "W",
+                "colors": "White",
+                "type": "Creature — Human Warrior",
+                "types": "Creature",
+                "subtypes": "Human,Warrior"
+            }
+        }
+    ]
 }
 ```
 </details>
@@ -281,57 +281,57 @@ When all players have picked, server adds picked cards to pools, notifies client
 <details>
 <summary>Socket Message Format</summary>
 
+```
+TOPIC /topic/draft/{draftId}/player/{playerId}/packRotated
+```
 ```json
 {
-    "event": "pack-rotated",
-    "data": {
-        "id": "d73dc1dd-2002-4992-8843-84b9b102493a",
-        "cards": [
-            {
-                "id": "9a0f1c96-dae0-4fe1-9494-8ceacde80c41",
-                "name": "Binding Mummy",
-                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426708&type=card",
-                "metadata": {
-                    "artist": "Shreya Shetty",
-                    "set": "AKH",
-                    "text": "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
-                    "flavor": "What the gods decree, the mummies enforce.",
-                    "manaCost": "{1}{W}",
-                    "cmc": "2.0",
-                    "number": "6",
-                    "rarity": "Common",
-                    "power": "2",
-                    "toughness": "2",
-                    "colorIdentity": "W",
-                    "colors": "White",
-                    "type": "Creature — Zombie",
-                    "types": "Creature",
-                    "subtypes": "Zombie"
-                }
-            },
-            {
-                "id": "9894fcfa-b475-4201-be5f-789593974016",
-                "name": "Devoted Crop-Mate",
-                "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426712&type=card",
-                "metadata": {
-                    "artist": "Zoltan Boros",
-                    "set": "AKH",
-                    "text": "You may exert Devoted Crop-Mate as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. (An exerted creature won't untap during your next untap step.)",
-                    "manaCost": "{2}{W}",
-                    "cmc": "3.0",
-                    "number": "10",
-                    "rarity": "Uncommon",
-                    "power": "3",
-                    "toughness": "2",
-                    "colorIdentity": "W",
-                    "colors": "White",
-                    "type": "Creature — Human Warrior",
-                    "types": "Creature",
-                    "subtypes": "Human,Warrior"
-                }
+    "id": "d73dc1dd-2002-4992-8843-84b9b102493a",
+    "cards": [
+        {
+            "id": "9a0f1c96-dae0-4fe1-9494-8ceacde80c41",
+            "name": "Binding Mummy",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426708&type=card",
+            "metadata": {
+                "artist": "Shreya Shetty",
+                "set": "AKH",
+                "text": "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
+                "flavor": "What the gods decree, the mummies enforce.",
+                "manaCost": "{1}{W}",
+                "cmc": "2.0",
+                "number": "6",
+                "rarity": "Common",
+                "power": "2",
+                "toughness": "2",
+                "colorIdentity": "W",
+                "colors": "White",
+                "type": "Creature — Zombie",
+                "types": "Creature",
+                "subtypes": "Zombie"
             }
-        ]
-    }
+        },
+        {
+            "id": "9894fcfa-b475-4201-be5f-789593974016",
+            "name": "Devoted Crop-Mate",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426712&type=card",
+            "metadata": {
+                "artist": "Zoltan Boros",
+                "set": "AKH",
+                "text": "You may exert Devoted Crop-Mate as it attacks. When you do, return target creature card with converted mana cost 2 or less from your graveyard to the battlefield. (An exerted creature won't untap during your next untap step.)",
+                "manaCost": "{2}{W}",
+                "cmc": "3.0",
+                "number": "10",
+                "rarity": "Uncommon",
+                "power": "3",
+                "toughness": "2",
+                "colorIdentity": "W",
+                "colors": "White",
+                "type": "Creature — Human Warrior",
+                "types": "Creature",
+                "subtypes": "Human,Warrior"
+            }
+        }
+    ]
 }
 ```
 </details>
@@ -343,10 +343,10 @@ When all packs have been drafted, server notifies clients that draft is over. Cl
 <details>
 <summary>Socket Message Format</summary>
 
+```
+TOPIC /topic/draft/{draftId}/draftComplete
+```
 ```json
-{
-    "event": "draft-complete",
-    "data": {}
-}
+{}
 ```
 </details>
