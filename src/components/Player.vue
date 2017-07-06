@@ -18,7 +18,6 @@
 
 <script>
 export default {
-    name: player,
     data() {
         return {
             sortKey: 'pick',

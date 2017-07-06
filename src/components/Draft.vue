@@ -19,7 +19,6 @@
     import Player from './Player.vue'
     import pack from '../assets/data.json'
     export default {
-        name: draft,
         data() {
             return {
                 description: {
