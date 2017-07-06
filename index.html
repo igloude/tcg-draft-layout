@@ -6,52 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Draft-o-tron 5000</title>
 
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-
-    <!-- NOTE - referenceing local JSON data for dev purposes only -->
-    <script type="text/javascript" src="src/js/data.json"></script>
-
-    <script src="build/bundle.js"></script>
 
 </head>
 <body>
     <main class="site grid">
-
         <h1 class="site--title grid--contained">Draft-o-tron 5000</h1>
-
-        <section id="draft" class="pack grid--contained">
-            <div class="pack--meta meta--bar">
-                <p class="meta--title">Pack {{ gameProgress.pack }} | Pick {{ gameProgress.pick }}</p>
-                <p class="meta--info">
-                  <span class="info--players">{{ players }} Players</span>
-                  <span class="info--description">{{ description.long }}</span>
-                </p>
-            </div>
-            <ul class="pack--list">
-                <li v-for="card in pack" :key="card.multiverseid" class="card" @click="pickCard(card)">
-                    <img :src="card.imageUrl" :alt="card.name">
-                </li>
-            </ul>
-        </section>
-
-        <section id="player" class="picks grid--contained with--bumper__top">
-            <div class="picks--meta meta--bar">
-                <p class="meta--title">Your Picks</p>
-                <ul class="meta--sort">
-                    <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
-                    <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
-                    <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
-                </ul>
-            </div>
-            <ul class="pick--list">
-                <li v-for="card in picks" :key="card.multiverseid" class="card">
-                    <img :src="card.imageUrl" :alt="card.name">
-                </li>
-            </ul>
-        </section>
-
+        <section id="draft"></section>
+        <section id="player"></section>
     </main>
+    <script src="/dist/build.js"></script>
 </body>
 </html>
