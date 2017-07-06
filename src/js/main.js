@@ -41,7 +41,7 @@ var draft = new Vue({
             }
         }
     }
-})
+});
 
 var player = new Vue({
     el: '#player',
@@ -93,9 +93,8 @@ var player = new Vue({
                 } else if (card.colors.length > 1) {
                     card.colorKey = 7;
                 }
-                console.log(card);
             });
             this.picks = _.orderBy(picks, ['colorKey', 'cmc']);
         }
     }
-})
+});
