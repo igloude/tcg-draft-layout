@@ -27,6 +27,18 @@ var draft = new Vue({
 
             // add chosen card to picks
             player.picks.push(card);
+
+            // refresh sorting
+            switch(player.sortKey) {
+                case "cost":
+                    player.sortByCost(player.picks);
+                    break;
+                case "color":
+                    player.sortByColor(player.picks);
+                    break;
+                default:
+                    player.sortByPick(player.picks);
+            }
         }
     }
 })
@@ -40,15 +52,15 @@ var player = new Vue({
     },
 
     methods: {
-        sortByCost: function (picks) {
+        sortByCost: function (picks) { // sort by cost, then name
             this.sortKey = 'cost';
             this.picks = _.orderBy(picks, ['cmc', 'name']);
         },
-        sortByPick: function(picks) {
+        sortByPick: function(picks) { // sort by pick order
             this.sortKey = 'pick';
             this.picks = _.orderBy(picks, 'pickOrder');
         },
-        sortByColor: function(picks) {
+        sortByColor: function(picks) { // sort by color (WUBRG, colorless, gold, land), then cmc
             this.sortKey = 'color';
             _.forEach(this.picks, function(card) {
                 var k;
@@ -83,7 +95,7 @@ var player = new Vue({
                 }
                 console.log(card);
             });
-            this.picks = _.orderBy(picks, 'colorKey');
+            this.picks = _.orderBy(picks, ['colorKey', 'cmc']);
         }
     }
 })
