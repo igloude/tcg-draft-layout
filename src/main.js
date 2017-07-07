@@ -4,12 +4,12 @@ import Player from './components/Player.vue'
 
 require('./scss/main.scss');
 
-new Vue({
+var player = new Vue({
         el: '#player',
         render: h => h(Player)
 })
 
-new Vue({
+var draft = new Vue({
         el: '#draft',
         render: h => h(Draft)
 })

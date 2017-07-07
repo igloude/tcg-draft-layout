@@ -33,8 +33,11 @@
                 pack: pack
             }
         },
-        methods() {
-            pickCard: (card) => {
+        components: {
+            Player
+        },
+        methods: {
+            pickCard(card) {
                 // NOTE - API call goes here
 
                 // remove chosen card from pack
