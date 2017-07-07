@@ -1,4 +1,4 @@
-var pack = [{
+[{
     "name": "Anafenza, the Foremost",
     "manaCost": "{W}{B}{G}",
     "cmc": 3,
@@ -1625,6 +1625,4 @@ var pack = [{
         "legality": "Legal"
     }],
     "id": "16df05e48b32288dccfd3c6c7f3a2f1858f63978"
-}];
-
-var picks = [];
+}]
