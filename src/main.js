@@ -3,17 +3,20 @@ import VueRouter from 'vue-router'
 import Hello from './components/Hello.vue'
 import Draft from './components/Draft.vue'
 
-Vue.use(VueRouter)
-
 require('./scss/main.scss');
 
-new Vue({
-    el: '#hello',
-    render: h => h(Hello)
-})
+const routes = [
+  { path: '/', component: Hello },
+  { path: '/draft', component: Draft },
+];
 
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+  routes,
+});
 
 new Vue({
-    el: '#draft',
-    render: h => h(Draft)
-})
+    el: '#app',
+    router,
+});
