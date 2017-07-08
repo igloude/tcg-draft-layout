@@ -36,6 +36,8 @@
     // NOTE - temporary
     import pack from '../assets/data.json'
 
+    var _ = require('lodash');
+
     export default {
         data() {
             return {
