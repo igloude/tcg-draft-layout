@@ -3,16 +3,26 @@
         <div class="name--entry grid--contained">
             <p>Well hi there, what's your name?</p>
             <input v-model="name" placeholder="Spike">
-            <router-link to="/draft" class="with--bumper-top">Go to Draft</router-link>
+            <a @click="goToDraft(name)" class="with--bumper-top">Go To Draft</a>
         </div>
     </main>
 </template>
 
 <script>
+
+
     export default {
         data() {
             return {
                 name: ""
+            }
+        },
+        methods: {
+            goToDraft(name) {
+                this.$router.push({
+                    name: 'draft',
+                    params: { draft_id: 123 }
+                });
             }
         }
     }
