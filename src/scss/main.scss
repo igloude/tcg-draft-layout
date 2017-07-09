@@ -1,3 +1,5 @@
+@import "lib/font-awesome/css/font-awesome.min.css";
+
 @import "reset";
 @import "query";
 @import "variables";
@@ -5,5 +7,8 @@
 @import "typography";
 @import "layout";
 
-@import "objects/_meta-bar";
-@import "objects/_card";
+@import "objects/meta-bar";
+@import "objects/card";
+@import "objects/icons";
+
+@import "pages/index";
