@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Draft-o-tron 5000</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-
 </head>
 <body class="site">
     <h1 class="site--title grid--contained">Draft-o-tron 5000</h1>
-    <main id="draft" class="grid"></main>
+    <main id="app">
+        <router-view></router-view>
+    </main>
     <script src="/dist/build.js"></script>
 </body>
 </html>

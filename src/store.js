@@ -2,7 +2,10 @@
  * Transition to the lobby view. Called when the host creates the draft or the player joins a draft that hasn't started yet.
  */
 function goToLobbyView() {
-    // TODO: Ian to implement, Justin to call
+    router.push({
+        name: 'user',
+        params: { someData: 123 }
+    })
 }
 
 /**
