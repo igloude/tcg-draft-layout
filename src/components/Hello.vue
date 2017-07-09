@@ -18,10 +18,18 @@
             }
         },
         methods: {
-            goToDraft(name) {
+            goToDraft() {
+                // get and set player/draft info
+                const draft_id = 123;
+                const player_id = 321;
+
+                // then route to draft
                 this.$router.push({
                     name: 'draft',
-                    params: { draft_id: 123 }
+                    params: {
+                        draft_id: draft_id,
+                        player_id: player_id
+                    }
                 });
             }
         }

@@ -2,17 +2,8 @@
     <main id="draft" class="grid">
         <section class="pack grid--contained">
             <div class="pack--meta meta--bar">
-                <p class="meta--title">Pack {{ gameProgress.pack }} | Pick {{ gameProgress.pick }}</p>
-                <p class="meta--info">
-                    <span class="info--players">{{ players }} Players</span>
-                    <span class="info--description">{{ description.long }}</span>
-                </p>
+                <p class="meta--title text--center">{{ players }} player {{ description.long }} Draft Results</p>
             </div>
-            <ul class="pack--list">
-                <li v-for="card in pack" :key="card.multiverseid" class="card" @click="pickCard(card)">
-                    <img :src="card.imageUrl" :alt="card.name">
-                </li>
-            </ul>
         </section>
         <section class="picks grid--contained with--bumper__top">
             <div class="picks--meta meta--bar">
@@ -20,7 +11,6 @@
                 <ul class="meta--sort">
                     <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
                     <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
-                    <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
                 </ul>
             </div>
             <ul class="pick--list">
@@ -45,56 +35,21 @@
                     long: 'Khans of Tarkir',
                     short: 'KTK'
                 },
-                gameProgress: {
-                    pack: 1,
-                    pick: 1
-                },
                 players: 3,
-                pack: [],
                 picks: [],
-                sortKey: 'pick'
+                sortKey: 'color'
             }
         },
         created() {
-            this.pack = pack // get pack data
-
-            if (picks) { // check for picks
-                this.picks = picks // get pick data
-            }
+            this.picks = pack; // get picks data
+        },
+        beforeMount() {
+            this.sortByColor(this.picks);
         },
         methods: {
-            pickCard(card) {
-                // remove chosen card from pack
-                pack.splice(pack.indexOf(card), 1);
-
-                // set pickOrder on card and increment counter
-                card.pickOrder = this.gameProgress.pick;
-                this.gameProgress.pick++;
-
-                // add chosen card to picks
-                this.picks.push(card);
-
-                // refresh sorting
-                switch(this.sortKey) {
-                    case "cost":
-                        this.sortByCost(this.picks);
-                        break;
-                    case "color":
-                        this.sortByColor(this.picks);
-                        break;
-                    default:
-                        this.sortByPick(this.picks);
-                }
-
-                // API call w/ pick
-            },
             sortByCost(picks) { // sort by cost, then name
                 this.sortKey = 'cost';
                 this.picks = _.orderBy(picks, ['cmc', 'name']);
-            },
-            sortByPick(picks) { // sort by pick order
-                this.sortKey = 'pick';
-                this.picks = _.orderBy(picks, 'pickOrder');
             },
             sortByColor(picks) { // sort by color (WUBRG, colorless, gold, land), then cmc
                 this.sortKey = 'color';
@@ -131,7 +86,16 @@
                     }
                 });
                 this.picks = _.orderBy(picks, ['colorKey', 'cmc']);
-            }
+            },
+            // sortByType(picks) {
+            //
+            // },
+            // hideColor(color) {
+            //
+            // }
+            // unhideColor(color) {
+            //
+            // }
         }
     }
 </script>
