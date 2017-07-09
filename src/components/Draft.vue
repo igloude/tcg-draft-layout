@@ -33,8 +33,8 @@
 </template>
 
 <script>
-    // NOTE - temporary
-    import pack from '../assets/data.json'
+    import pack from '../assets/data.json' // NOTE - temporary
+    import addCardToPool from '../store/addCardToPool.js'
 
     var _ = require('lodash');
 
@@ -58,9 +58,9 @@
         created() {
             this.pack = pack // get pack data
 
-            if (picks) { // check for picks
-                this.picks = picks // get pick data
-            }
+            // if (picks) { // check for picks from server (if pack 2 or 3)
+            //     this.picks = picks // get pick data
+            // }
         },
         methods: {
             pickCard(card) {
@@ -86,7 +86,7 @@
                         this.sortByPick(this.picks);
                 }
 
-                // API call w/ pick
+                addCardToPool(card);
             },
             sortByCost(picks) { // sort by cost, then name
                 this.sortKey = 'cost';

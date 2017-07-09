@@ -3,13 +3,14 @@
         <div class="name--entry grid--contained">
             <p>Well hi there, what's your name?</p>
             <input v-model="name" placeholder="Spike">
-            <a @click="goToDraft(name)" class="with--bumper-top">Go To Draft</a>
+            <a @click="joinLobby(name)" class="with--bumper-top">Go To Draft</a>
         </div>
     </main>
 </template>
 
 <script>
-
+    import addLobbyPlayer from '../store/addLobbyPlayer.js'
+    import goToView from '../store/goToView.js'
 
     export default {
         data() {
@@ -18,19 +19,18 @@
             }
         },
         methods: {
-            goToDraft() {
-                // get and set player/draft info
-                const draft_id = 123;
-                const player_id = 321;
+            joinLobby(name) {
+                const player = new Object;
+                player.name = name;
+                addLobbyPlayer(player);
 
-                // then route to draft
                 this.$router.push({
                     name: 'draft',
                     params: {
-                        draft_id: draft_id,
-                        player_id: player_id
+                        draft_id: 123,
+                        player_id: 321
                     }
-                });
+                })
             }
         }
     }

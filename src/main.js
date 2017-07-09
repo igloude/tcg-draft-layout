@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Hello from './components/Hello.vue'
 import Draft from './components/Draft.vue'
-import Results from './components/Results.vue'
+import Summary from './components/Summary.vue'
 
 require('./scss/main.scss');
 
@@ -18,9 +18,9 @@ const routes = [
       component: Draft
   },
   {
-      path: '/results/:draft_id/:player_id',
-      name: 'results',
-      component: Results
+      path: '/summary/:draft_id/:player_id',
+      name: 'summary',
+      component: Summary
   },
 ];
 

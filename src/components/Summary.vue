@@ -23,8 +23,7 @@
 </template>
 
 <script>
-    // NOTE - temporary
-    import pack from '../assets/data.json'
+    import pack from '../assets/data.json' // NOTE - temporary
 
     var _ = require('lodash');
 
@@ -87,6 +86,13 @@
                 });
                 this.picks = _.orderBy(picks, ['colorKey', 'cmc']);
             },
+            exportToText(picks) {
+                const list = [];
+                _.forEach(this.picks, function(card) {
+                    list.push(card.name);
+                });
+                console.log(list);
+            }
             // sortByType(picks) {
             //
             // },
