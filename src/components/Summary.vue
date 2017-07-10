@@ -1,16 +1,28 @@
 <template>
-    <main id="draft" class="grid">
-        <section class="pack grid--contained">
-            <div class="pack--meta meta--bar">
-                <p class="meta--title text--center">{{ players }} player {{ description.long }} Draft Results</p>
+    <div id="draft" class="grid">
+        <section class="grid--contained">
+            <p>{{ players }} player {{ description.long }} Draft Results</p>
+            <div class="meta--bar">
+                <p class="stat--num">{{ numberOfCards }} cards</p>
+
+                <ul class="stat--count-wubrg">
+                    <li class="count--w">{{ wubrg.w }}</li>
+                    <li class="count--u">{{ wubrg.u }}</li>
+                    <li class="count--b">{{ wubrg.b }}</li>
+                    <li class="count--r">{{ wubrg.r }}</li>
+                    <li class="count--g">{{ wubrg.g }}</li>
+                </ul>
+
+                <p>Average CMC: {{ averageCost }}</p>
             </div>
         </section>
         <section class="picks grid--contained with--bumper__top">
             <div class="picks--meta meta--bar">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
-                    <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
-                    <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
+                    <li><a @click="exportToText(picks)" class="meta--anchor__open">Export</a></li>
+                    <li><a @click="sortByColor(picks)" class="meta--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
+                    <li><a @click="sortByCost(picks)" class="meta--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
                 </ul>
             </div>
             <ul class="pick--list">
@@ -19,7 +31,7 @@
                 </li>
             </ul>
         </section>
-    </main>
+    </div>
 </template>
 
 <script>
@@ -37,6 +49,51 @@
                 players: 3,
                 picks: [],
                 sortKey: 'color'
+            }
+        },
+        computed: {
+            numberOfCards: (that) => {
+                return that.picks.length;
+            },
+            averageCost: (that) => {
+                var avg = that.picks.length;
+                var costs = 0;
+                _.forEach(that.picks, function(card) {
+                    costs += card.cmc;
+                });
+                avg = avg / costs;
+                return avg;
+            },
+            wubrg: (that) => {
+                var symbols = {
+                    w: 0,
+                    u: 0,
+                    b: 0,
+                    r: 0,
+                    g: 0
+                };
+                _.forEach(that.picks, function(card) {
+                    _.forEach(_.words(card.manaCost), function(word) {
+                        switch(word) {
+                            case "W":
+                                symbols.w++;
+                                break;
+                            case "U":
+                                symbols.u++;
+                                break;
+                            case "B":
+                                symbols.b++;
+                                break;
+                            case "R":
+                                symbols.r++;
+                                break;
+                            case "G":
+                                symbols.g++;
+                                break;
+                        }
+                    });
+                });
+                return symbols;
             }
         },
         created() {
@@ -92,6 +149,8 @@
                     list.push(card.name);
                 });
                 console.log(list);
+                // activate modal
+                // populate w/ list
             }
             // sortByType(picks) {
             //
@@ -105,3 +164,30 @@
         }
     }
 </script>
+
+<style lang="scss">
+    .stat--count-wubrg {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            position: relative;
+            top: 3px;
+            padding: 3px 8.5px;
+            border: 1px solid;
+            border-radius: 50%;
+            color: #222;
+
+            @each $class, $color in (w, #fffcd9),
+                                    (u, #a9e0f9),
+                                    (b, #c6c6c6),
+                                    (r, #faaa8f),
+                                    (g, #9bd3ae) {
+                &.count--#{$class} {
+                    border-color: darken($color, 20%);
+                    background: $color;
+                }
+            }
+        }
+    }
+</style>

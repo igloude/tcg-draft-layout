@@ -4,7 +4,7 @@ $sort--horizontal-padding: 7px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: $spacer-sm;
+    margin-bottom: $spacer-lg;
 }
 .meta--title {
     font-size: 1.5em;
@@ -23,22 +23,24 @@ $sort--horizontal-padding: 7px;
         display: inline-block;
     }
 }
-.sort--anchor {
+.meta--anchor,
+.meta--anchor__open {
+    margin-right: 5px;
+    padding: 3px $sort--horizontal-padding;
+    border-radius: 3px;
     font-size: .8em;
     color: $black;
     text-decoration: none;
-    padding: 3px $sort--horizontal-padding;
-    border-radius: 3px;
-    border: 1px solid $black;
     transition: $transition;
 
-    &.sort--anchor__small {
-        border-radius: 50%;
-    }
     &:hover {
         background: lighten($black, 80%);
         cursor: pointer;
     }
+}
+.meta--anchor {
+    border: 1px solid $black;
+
     &.active {
         background: $black;
         color: $white;
