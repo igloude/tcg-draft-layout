@@ -1,0 +1,13 @@
+@keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+.icon--pulse {
+    animation: pulse 0.35s infinite alternate;
+    -webkit-animation: pulse 0.35s infinite alternate;
+}
+
+.icon__red {
+    color: $red;
+}

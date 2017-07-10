@@ -5,57 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Draft-o-tron 5000</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="dist/main.css">
-
-    <script src="https://unpkg.com/vue"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js">
-
-    </script>
-
-    <!-- NOTE - referenceing local JSON data for dev purposes only -->
-    <script type="text/javascript" src="src/js/data.json"></script>
 </head>
-<body>
-    <main class="site grid">
-
-        <h1 class="site--title grid--contained">Draft-o-tron 5000</h1>
-
-        <section id="draft" class="pack grid--contained">
-            <div class="pack--meta meta--bar">
-                <p class="meta--title">Pack {{ gameProgress.pack }} | Pick {{ gameProgress.pick }}</p>
-                <p class="meta--info">
-                  <span class="info--players">{{ players }} Players</span>
-                  <span class="info--description">{{ description.long }}</span>
-                </p>
-            </div>
-            <ul class="pack--list">
-                <li v-for="card in pack" :key="card.multiverseid" class="card" @click="pickCard(card)">
-                    <img :src="card.imageUrl" :alt="card.name">
-                </li>
-            </ul>
-        </section>
-
-        <section id="player" class="picks grid--contained with--bumper__top">
-            <div class="picks--meta meta--bar">
-                <p class="meta--title">Your Picks</p>
-                <ul class="meta--sort">
-                    <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
-                    <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
-                    <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
-                </ul>
-            </div>
-            <ul class="pick--list">
-                <li v-for="card in picks" :key="card.multiverseid" class="card">
-                    <img :src="card.imageUrl" :alt="card.name">
-                </li>
-            </ul>
-        </section>
-
+<body class="site">
+    <h1 class="site--title">Draft-o-tron 5000</h1>
+    <main id="app">
+        <router-view></router-view>
     </main>
 
-    <script src="dist/main.js"></script>
+    <footer class="site--footer">
+        <div class="footer--container meta--bar__push">
+            <ul class="footer--menu align--left">
+                <li>some</li>
+                <li>options</li>
+            </ul>
+            <p class="footer--fluff">Made with <i class="fa fa-heart icon--pulse icon__red"></i> in Minnesota</p>
+            <a href="#" class="footer--to-top align--right"><i class="fa fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="/dist/build.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 # Draft-o-tron 5000
 
-* JSON data structure from [magicthegathering.io](https://docs.magicthegathering.io/)
 * frontend templating using [vue.js](https://vuejs.org/)
-* construct asset pipeline by running `gulp`
+* routing using [vue-router](https://router.vuejs.org/en/)
+* data manipulation using [lodash](https://lodash.com/)
+* fonts from [Google Fonts](https://fonts.google.com/)
+* build: `npm run build`
+* dev server: `npm run dev`
