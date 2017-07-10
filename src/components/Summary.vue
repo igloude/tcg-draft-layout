@@ -17,7 +17,7 @@
             </div>
         </section>
         <section class="picks grid--contained with--bumper__top">
-            <div class="picks--meta meta--bar">
+            <div class="meta--bar meta--bar__push">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
                     <li><a @click="exportToText(picks)" class="meta--anchor__open">Export</a></li>
@@ -56,13 +56,13 @@
                 return that.picks.length;
             },
             averageCost: (that) => {
-                var avg = that.picks.length;
                 var costs = 0;
                 _.forEach(that.picks, function(card) {
-                    costs += card.cmc;
+                    if (card.cmc >= 0) {
+                        costs += card.cmc;
+                    }
                 });
-                avg = avg / costs;
-                return avg;
+                return _.floor( (costs / that.picks.length), 2 );
             },
             wubrg: (that) => {
                 var symbols = {

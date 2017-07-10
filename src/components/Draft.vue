@@ -1,7 +1,11 @@
 <template>
     <main id="draft" class="grid">
+
+        <!-- temporary navigation -->
+        <a @click="goToSummary()" class="grid--contained">Go to Summary View</a>
+
         <section class="pack grid--contained">
-            <div class="pack--meta meta--bar">
+            <div class="meta--bar meta--bar__push">
                 <p class="meta--title">Pack {{ gameProgress.pack }} | Pick {{ gameProgress.pick }}</p>
                 <p class="meta--info">
                     <span class="info--players">{{ players }} Players</span>
@@ -15,12 +19,12 @@
             </ul>
         </section>
         <section class="picks grid--contained with--bumper__top">
-            <div class="picks--meta meta--bar">
+            <div class="meta--bar meta--bar__push">
                 <p class="meta--title">Your Picks</p>
                 <ul class="meta--sort">
-                    <li><a @click="sortByColor(picks)" class="sort--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
-                    <li><a @click="sortByCost(picks)" class="sort--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
-                    <li><a @click="sortByPick(picks)" class="sort--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
+                    <li><a @click="sortByColor(picks)" class="meta--anchor" :class="{ active: sortKey == 'color' }">Color</a></li>
+                    <li><a @click="sortByCost(picks)" class="meta--anchor" :class="{ active: sortKey == 'cost' }">Cost</a></li>
+                    <li><a @click="sortByPick(picks)" class="meta--anchor" :class="{ active: sortKey == 'pick' }">Pick</a></li>
                 </ul>
             </div>
             <ul class="pick--list">
@@ -63,6 +67,15 @@
             // }
         },
         methods: {
+            goToSummary() {
+                this.$router.push({
+                    name: 'summary',
+                    params: {
+                        draft_id: 123,
+                        player_id: 321
+                    }
+                })
+            },
             pickCard(card) {
                 // remove chosen card from pack
                 pack.splice(pack.indexOf(card), 1);

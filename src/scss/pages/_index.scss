@@ -1,4 +1,38 @@
+.site {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
 .site--footer {
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     padding: $spacer-lg 0;
+    background: $white;
+    text-align: center;
+}
+.footer--container {
+    max-width: $container-width;
+    margin: 0 auto;
+
+    * {
+        flex: 1;
+    }
+
+    @media screen and (max-width: $container-width) {
+        padding: 0 1em;
+    }
+}
+.footer--menu {
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+.footer--fluff {
+    flex: 1 0 200px;
+
+    @include query(500px, max) {
+        display: none;
+    }
 }

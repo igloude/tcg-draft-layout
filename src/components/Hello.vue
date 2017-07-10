@@ -3,7 +3,7 @@
         <div class="name--entry grid--contained">
             <p>Well hi there, what's your name?</p>
             <input v-model="name" placeholder="Spike">
-            <a @click="joinLobby(name)" class="with--bumper-top">Go To Draft</a>
+            <button @click="joinLobby(name)" class="with--bumper-top">Go To Draft</button>
         </div>
     </main>
 </template>
