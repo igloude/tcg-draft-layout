@@ -101,7 +101,7 @@
                         this.sortByPick(this.picks);
                 }
 
-                cardPicked(card.id);
+                cardPicked(card);
             },
             sortByCost(picks) { // sort by cost, then name
                 this.sortKey = 'cost';
