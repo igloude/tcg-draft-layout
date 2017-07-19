@@ -1,7 +1,7 @@
 import SockJS from 'sockjs-client'
 import Stomp from 'stompjs'
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "http://34.192.161.47:8080";
 
 /**
  * Connects a player to the server for an active draft. Once connected, draft events will be received and passed

@@ -24,10 +24,8 @@ function draftCreated(draftName, hostName, setCode) {
         localStorage.setItem("draftId", draftId);
         localStorage.setItem("playerId", playerId);
         api.connect(draftId, playerId, newPackReceived, newPackReceived, playerJoined, draftComplete);
-        // goToView("lobby", draftId, playerId);
         setDraftInfo({ name: name, set: { code: setData.code, name: setData.name } });
-        setLobbyPlayers(players);
-    })
+    });
 }
 
 export default draftCreated;

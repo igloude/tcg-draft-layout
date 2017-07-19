@@ -7,7 +7,7 @@
             <input v-model="name" placeholder="Player Name">
             <input v-model="draft" placeholder="Draft Name">
             <select v-model="set">
-                <option value="false">Choose a Set</option>
+                <option value="">Choose a Set</option>
                 <option v-for="s in sets" :value="s.code">{{ s.name }}</option>
             </select>
 
@@ -25,7 +25,7 @@
             return {
                 name: "",
                 draft: "",
-                set: "false",
+                set: "",
                 sets: []
             }
         },
@@ -43,9 +43,18 @@
                 .catch(err => console.error(err));
             },
             startDraft(draft, name, set) {
-                if (set != false) {
-                    draftCreated(draft, name, set)
+                if (set.length === 3) {
+                    draftCreated(draft, name, set);
+
+                    this.$router.push({
+                        name: 'draft',
+                        params: {
+                            draft_id: localStorage.draftId,
+                            player_id: localStorage.playerId
+                        }
+                    });
                 } else {
+                    // NOTE - throw a better error
                     console.log('pick a set, dummy');
                 }
             }
