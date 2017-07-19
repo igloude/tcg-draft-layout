@@ -34,6 +34,7 @@
         },
         methods: {
             fetchSets(sets) {
+                // NOTE - temporary data source, we'll want a better list in the future
                 fetch('https://mtgjson.com/json/SetList.json')
                 .then(res => res.json())
                 .then((out) => {
