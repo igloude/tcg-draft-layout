@@ -19,7 +19,7 @@ function connect(draftId, playerId, onNewPack, onPackRotated, onPlayerJoined, on
     const socket = new SockJS(baseUrl + '/socket');
     this.stompClient = new Stomp(socket);
 
-    this.stompClient.connect({}, (frame) => {
+    this.stompClient.connect({}, function(frame) {
         this.stompClient.subscribe('/topic/draft/'+draftId+'/player/'+playerId+'/newPack', (message) => {
             const pack = JSON.parse(message);
             onNewPack(pack.cards);
@@ -112,7 +112,7 @@ function pickCard(playerId, cardId, onPick) {
 function request(method, endpoint, data, callback) {
     const xhr = new XMLHttpRequest();
 
-    xhr.addEventListener("readystatechange", () => {
+    xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4 && this.status === 200) {
             callback(JSON.parse(this.responseText));
         }

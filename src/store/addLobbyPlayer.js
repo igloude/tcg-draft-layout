@@ -4,7 +4,7 @@
  * @param player New player joining the draft.
  *   { "name": "Player 3" }
  */
-var addLobbyPlayer = (player) => {
+function addLobbyPlayer(player) {
     // TODO: Ian to implement, Justin to call
     // NOTE: this will be a method of the view(s) that need it
     console.log('addLobbyPlayer');

@@ -1,6 +1,6 @@
-import * as api from 'api'
-import addCardToPool from 'addCardToPool'
-import setPackCards from 'setPackCards'
+import * as api from './api.js'
+import addCardToPool from './addCardToPool.js'
+import setPackCards from './setPackCards.js'
 
 /**
  * This method should be called when a player selects a card to pick from their active pack. After the server has
@@ -9,14 +9,14 @@ import setPackCards from 'setPackCards'
  *
  * @param cardId GUID of the card to pick.
  */
-function cardPicked(cardId) {
+function cardPicked(card) {
     console.log('cardPicked');
-    console.log(cardId);
+    console.log(card);
 
     const draftId = localStorage.getItem("draftId");
     const playerId = localStorage.getItem("playerId");
 
-    api.pickCard(playerId, cardId, function(card) {
+    api.pickCard(playerId, card.id, function(card) {
         addCardToPool(card);
         setPackCards([]);
     })

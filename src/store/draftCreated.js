@@ -1,4 +1,4 @@
-import * as api from 'api'
+import * as api from './api.js'
 import newPackReceived from 'newPackReceived'
 import playerJoined from 'playerJoined'
 import draftComplete from 'draftComplete'

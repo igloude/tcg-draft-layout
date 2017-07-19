@@ -10,7 +10,7 @@
  *     }
  *   }
  */
-var setDraftInfo = (draftInfo) => {
+function setDraftInfo(draftInfo) {
     // TODO: Ian to implement, Justin to call
     console.log('setDraftInfo');
     console.log(draftInfo);

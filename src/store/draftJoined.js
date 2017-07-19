@@ -1,10 +1,10 @@
-import * as api from 'api'
-import newPackReceived from 'newPackReceived'
-import playerJoined from 'playerJoined'
-import draftComplete from 'draftComplete'
-import goToView from 'goToView'
-import setDraftInfo from 'setDraftInfo'
-import setLobbyPlayers from 'setLobbyPlayers'
+import * as api from './api.js'
+import newPackReceived from './newPackReceived.js'
+import playerJoined from './playerJoined.js'
+import draftComplete from './draftComplete.js'
+import goToView from './goToView.js'
+import setDraftInfo from './setDraftInfo.js'
+import setLobbyPlayers from './setLobbyPlayers.js'
 
 /**
  * This method should be called when a player joins a draft, either via loading a URL with a draft ID in it, or by

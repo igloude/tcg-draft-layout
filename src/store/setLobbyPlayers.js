@@ -7,7 +7,7 @@
  *     { "name": "Player 2" }
  *   ]
  */
-var setLobbyPlayers = (players) => {
+function setLobbyPlayers(players) {
     // TODO: Ian to implement, Justin to call
     // NOTE: this will be a method of the view(s) that need it
     console.log('setLobbyPlayers');

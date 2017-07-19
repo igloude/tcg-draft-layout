@@ -25,7 +25,7 @@
  *     }
  *   }
  */
-var addCardToPool = (card) => {
+function addCardToPool(card) {
     // TODO: Ian to implement, Justin to call
     // NOTE: this will be called from the pickCard() method in the Draft view
     console.log('addCardToPool');

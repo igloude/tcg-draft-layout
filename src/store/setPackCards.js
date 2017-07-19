@@ -27,7 +27,7 @@
  *     }, [...]
  *   ]
  */
-var setPackCards = (cards) => {
+function setPackCards(cards) {
     // TODO: Ian to implement, Justin to call
     console.log('setPackCards');
     console.log(cards);

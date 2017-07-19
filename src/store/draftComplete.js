@@ -1,4 +1,4 @@
-import goToView from 'goToView'
+import goToView from './goToView.js'
 
 /**
  * Called when the draft is complete and all cards have been drafted. Transitions to the summary view where players

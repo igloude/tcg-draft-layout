@@ -38,7 +38,9 @@
 
 <script>
     import pack from '../assets/data.json' // NOTE - temporary
+    import cardPicked from '../store/cardPicked.js'
     import addCardToPool from '../store/addCardToPool.js'
+    import setDraftInfo from '../store/setDraftInfo.js'
 
     var _ = require('lodash');
 
@@ -99,7 +101,7 @@
                         this.sortByPick(this.picks);
                 }
 
-                addCardToPool(card);
+                cardPicked(card.id);
             },
             sortByCost(picks) { // sort by cost, then name
                 this.sortKey = 'cost';
