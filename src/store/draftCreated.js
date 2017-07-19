@@ -1,10 +1,10 @@
 import * as api from './api.js'
-import newPackReceived from 'newPackReceived'
-import playerJoined from 'playerJoined'
-import draftComplete from 'draftComplete'
-import goToView from 'goToView'
-import setDraftInfo from 'setDraftInfo'
-import setLobbyPlayers from 'setLobbyPlayers'
+import newPackReceived from './newPackReceived.js'
+import playerJoined from './playerJoined.js'
+import draftComplete from './draftComplete.js'
+import goToView from './goToView.js'
+import setDraftInfo from './setDraftInfo.js'
+import setLobbyPlayers from './setLobbyPlayers.js'
 
 /**
  * This method should be called when a host clicks to create a new draft. After the draft is created on the server
@@ -24,7 +24,7 @@ function draftCreated(draftName, hostName, setCode) {
         localStorage.setItem("draftId", draftId);
         localStorage.setItem("playerId", playerId);
         api.connect(draftId, playerId, newPackReceived, newPackReceived, playerJoined, draftComplete);
-        goToView("lobby", draftId, playerId);
+        // goToView("lobby", draftId, playerId);
         setDraftInfo({ name: name, set: { code: setData.code, name: setData.name } });
         setLobbyPlayers(players);
     })

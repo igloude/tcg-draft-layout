@@ -1,4 +1,4 @@
-import addLobbyPlayer from 'addLobbyPlayer'
+import addLobbyPlayer from './addLobbyPlayer.js'
 
 /**
  * Called when a new player joins the draft. Updates the lobby view with the new player added.

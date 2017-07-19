@@ -1,5 +1,5 @@
-import setPackCards from 'setPackCards'
-import goToView from 'goToView'
+import setPackCards from './setPackCards.js'
+import goToView from './goToView.js'
 
 /**
  * Called when a pack is received by the player, whether it is a fresh pack or rotated from the next player over.
