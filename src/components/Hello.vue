@@ -11,7 +11,7 @@
                 <option v-for="s in sets" :value="s.code">{{ s.name }}</option>
             </select>
 
-            <button @click="startDraft(name, draft, set)" class="with--bumper-top">Create Draft</button>
+            <button @click="startDraft(draft, name, set)" class="with--bumper-top">Create Draft</button>
         </div>
     </main>
 </template>
