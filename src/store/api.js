@@ -17,19 +17,19 @@ const baseUrl = "http://34.192.161.47:8080";
  */
 function connect(draftId, playerId, onNewPack, onPackRotated, onPlayerJoined, onDraftComplete) {
     const socket = new SockJS(baseUrl + '/socket');
-    this.stompClient = new Stomp(socket);
+    this.stompClient = Stomp.over(socket);
 
-    this.stompClient.connect({}, function(frame) {
+    this.stompClient.connect({}, (frame) => {
         this.stompClient.subscribe('/topic/draft/'+draftId+'/player/'+playerId+'/newPack', (message) => {
-            const pack = JSON.parse(message);
+            const pack = JSON.parse(message.body);
             onNewPack(pack.cards);
         });
         this.stompClient.subscribe('/topic/draft/'+draftId+'/player/'+playerId+'/packRotated', (message) => {
-            const pack = JSON.parse(message);
+            const pack = JSON.parse(message.body);
             onPackRotated(pack.cards);
         });
         this.stompClient.subscribe('/topic/draft/'+draftId+'/playerJoined', (message) => {
-            const player = JSON.parse(message);
+            const player = JSON.parse(message.body);
             onPlayerJoined(player.id, player.name);
         });
         this.stompClient.subscribe('/topic/draft/'+draftId+'/draftComplete', (message) => {
