@@ -87,6 +87,19 @@ function joinDraft(id, name, onJoin) {
 }
 
 /**
+ * Starts a draft. To be called when the host presses "start."
+ *
+ * @param id GUID of the draft.
+ * @param onStarted Callback triggered when the draft has been successfully started.
+ */
+function startDraft(id, onStarted) {
+    request("POST", "/draft/"+id+"/start", {}, (response) => {
+        console.log("Draft " + id + " successfully started.");
+        onStarted();
+    });
+}
+
+/**
  * Selects a card from a player's active pack.
  *
  * @param playerId GUID of the picking player.
@@ -133,5 +146,6 @@ export {
     disconnect,
     hostDraft,
     joinDraft,
+    startDraft,
     pickCard
 };
